@@ -1,0 +1,13 @@
+C:\Users\USER\Desktop\Student software\mysql connector\mysql connector\bin\Debug\mysql connector.exe
+C:\Users\USER\Desktop\Student software\mysql connector\mysql connector\bin\Debug\mysql connector.pdb
+C:\Users\USER\Desktop\Student software\mysql connector\mysql connector\bin\Debug\mysql connector.xml
+C:\Users\USER\Desktop\Student software\mysql connector\mysql connector\bin\Debug\MySql.Data.dll
+C:\Users\USER\Desktop\Student software\mysql connector\mysql connector\obj\x86\Debug\mysql connector.vbprojResolveAssemblyReference.cache
+C:\Users\USER\Desktop\Student software\mysql connector\mysql connector\obj\x86\Debug\mysql_connector.Form1.resources
+C:\Users\USER\Desktop\Student software\mysql connector\mysql connector\obj\x86\Debug\mysql_connector.Resources.resources
+C:\Users\USER\Desktop\Student software\mysql connector\mysql connector\obj\x86\Debug\mysql connector.vbproj.GenerateResource.Cache
+C:\Users\USER\Desktop\Student software\mysql connector\mysql connector\obj\x86\Debug\mysql connector.exe
+C:\Users\USER\Desktop\Student software\mysql connector\mysql connector\obj\x86\Debug\mysql connector.xml
+C:\Users\USER\Desktop\Student software\mysql connector\mysql connector\obj\x86\Debug\mysql connector.pdb
+C:\Users\USER\Desktop\Student software\mysql connector\mysql connector\obj\x86\Debug\mysql_connector.student.resources
+C:\Users\USER\Desktop\Student software\mysql connector\mysql connector\bin\Debug\mysql connector.exe.config

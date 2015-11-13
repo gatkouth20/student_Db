@@ -1,0 +1,9 @@
+C:\Users\USER\Desktop\juba teaching hospital\fleshing form\fleshing form\obj\x86\Debug\fleshing_form.Form1.resources
+C:\Users\USER\Desktop\juba teaching hospital\fleshing form\fleshing form\obj\x86\Debug\fleshing_form.Resources.resources
+C:\Users\USER\Desktop\juba teaching hospital\fleshing form\fleshing form\obj\x86\Debug\fleshing form.vbproj.GenerateResource.Cache
+C:\Users\USER\Desktop\juba teaching hospital\fleshing form\fleshing form\bin\Debug\fleshing form.exe
+C:\Users\USER\Desktop\juba teaching hospital\fleshing form\fleshing form\bin\Debug\fleshing form.pdb
+C:\Users\USER\Desktop\juba teaching hospital\fleshing form\fleshing form\bin\Debug\fleshing form.xml
+C:\Users\USER\Desktop\juba teaching hospital\fleshing form\fleshing form\obj\x86\Debug\fleshing form.exe
+C:\Users\USER\Desktop\juba teaching hospital\fleshing form\fleshing form\obj\x86\Debug\fleshing form.xml
+C:\Users\USER\Desktop\juba teaching hospital\fleshing form\fleshing form\obj\x86\Debug\fleshing form.pdb

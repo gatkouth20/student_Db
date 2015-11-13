@@ -1,0 +1,780 @@
+input.mybutton{
+                        background-color: #ff6b00;
+                        border-width: 0px;
+                        border-style: solid;
+                        border-color: #ff6b00;
+                        color: #ffffff;
+                        font-weight: bold;
+                        font-family: Arial;
+                    }
+select.myselect{
+                            background-color: #ffffff;
+                            border-width: 1px;
+                            border-style: solid;
+                            border-color:#99AACD;
+                            color:#000000;
+                        }
+body{
+                        background-color: #ffffff;
+                        background: #ffffff url('');
+                        background-position: left;
+                        background-repeat: repeat;
+                        background-attachment: fixed;
+                    }
+input.mytextbox, textarea{
+                            background-color: #ffffff;
+                            border-width: 1px;
+                            border-style: solid;
+                            border-color:#99AACD;
+                            color:#000000;        
+                        }
+img.myimg{
+                            border-width: 1px;
+                            border-style: solid;
+                            border-color: #99AACD;
+                            background-color: #ffffff;        
+                        }
+#main_wrapper{
+                        background-color: #ffffff;
+                        width:980px;
+                        float:none;
+                        }
+
+                    #welcome_wrapper .cc_heading{
+                        font-size: 22px;
+                        font-weight: normal;    
+                        color: #1E7BB3;
+                    }
+                    #welcome_wrapper .cc_introductory{
+                        font-size: 14px;
+                        font-weight: normal;    
+                        color: #585858;
+                    }
+
+                    #div_center a.big-global-link:link, #div_center a.big-global-link:visited{
+                        text-decoration: none;
+                        color:#006599;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                    #div_center a.big-global-link:hover{
+                        text-decoration: none;
+                        color:#006599;
+                    }
+                    
+                    #div_center a.normal-global-link:link, #div_center a.normal-global-link:visited{
+                        text-decoration: none;
+                        color:#006599;
+                        font-size: 12px;
+                        font-weight: normal;
+                    }
+                    #div_center a.normal-global-link:hover{
+                        text-decoration: underline;
+                        color:#006599;
+                    }
+
+                    #div_center a.small-global-link:link, #div_center a.small-global-link:visited{
+                        text-decoration: underline;
+                        color:#006599;
+                        font-size: 10px;
+                        font-weight: normal;
+                    }
+                    #div_center a.small-global-link:hover{
+                        text-decoration: none;
+                        color:#006599;
+                    }
+
+                    #div_center .big-global{
+                        color:#006599;
+                        font-size: 16px;
+                        font-weight: bold;        
+                    }
+                    #div_center .normal-global{
+                        color:#333333;
+                        font-size: 12px;
+                        font-weight: normal;        
+                    }
+                    #div_center .small-global{
+                        color:#333333;
+                        font-size: 10px;
+                        font-weight: normal;        
+                    }
+                    .price-global{
+                        color:#ff6701;
+                        font-size: 20px;
+                        font-weight: bold;        
+                        
+                    }
+                    #breadcrumbs a:link, #breadcrumbs a:visited {
+                        color: #006599;
+                    }
+                    #breadcrumbs a:hover{
+                        color:#006599;    
+                    }
+
+                    #breadcrumbs{
+                        color:#006599;
+                    }
+                    .footer-wrapper .normal-global{
+                        color:#333333;
+                        font-size: 12px;
+                        font-weight: normal;        
+                    }
+                    
+                    
+
+                #activity_search .activity_header{
+                    background-color: #006599;                
+                    border-bottom-color: #006599;
+                    color:#FFFFFF;
+                    font-weight: bold;
+                }
+                #activity_search .activity_content{
+                    background-color: #f5f5f5;        
+                    border-color: #006599;
+                }
+                #activity_search .activity_content label{
+                    font-size: 12px;
+                    font-weight: bold;
+                    color:#333333;
+                }
+                                    
+                .mytab-content{
+                    background-color: #f5f5f5;
+                    border:1px #006599 solid;
+                }
+                #cd-tab a.active1:link, a.active1:visited {
+                    background-color: #006599;
+                    color: #FFFFFF;
+                }
+                #cd-tab a.active1:hover {
+                    color: #FFFFFF;
+
+                }
+                .tab_active{
+                    border:1px #006599 solid;
+                }
+                
+                .ui-datepicker-days-row {
+                    background: #f5f5f5;
+                }
+
+                .ui-datepicker-week-end-cell {
+                    background: #f5f5f5;
+                    
+                }
+
+                .ui-datepicker-current-day {
+                    background: #006599 !important;
+                }                
+    #accordwrapper{
+        width:99%;
+        margin-bottom:10px;
+    }
+    .accordionButton{
+        cursor: pointer;
+        background-color: #006599;
+        color: #FFFFFF;
+        font-weight: bold;
+        padding:8px 10px;
+        font-size: 12px;
+        margin-top:2px;
+        background: #006599 url(http://partner.city-discovery.com/images/accordButtonbg.png) center repeat-x;
+        
+    }
+    .acActive{
+        background: #006599;
+    }
+    .accordionContent{
+        background-color: #f5f5f5;
+        border:1px #006599 solid;       
+    }
+                                    
+                    
+
+                    #center_products .products-header{
+                        background-color: #006599;
+                        color:#FFFFFF;    
+                    }
+                    .products-header a:link, .products-header a:visited{
+                        font-size: 16px;
+                        font-weight: bold;
+                        color:#FFFFFF;
+                        text-decoration: none;
+                    }
+                    .products-header a:hover{
+                        color:#FFFFFF;
+                        text-decoration: none;
+                    }
+                    #center_products .products-content{
+                        color: #585858;
+                        font-size: 12px;
+                        background-color: #FFFFFF;     
+                    }
+                    .products-content a.product-normal-link:link, .products-content a.product-normal-link:visited{
+                        color:#0099cc;
+                        font-size: 12px;
+                        text-decoration: none;
+                        font-weight: normal;
+                    }
+                    .products-content a.product-normal-link:hover{
+                        text-decoration: underline;
+                        color:#0099cc;
+                    }
+                    .products-content a.product-small-link:link, .products-content a.product-small-link:visited{
+                        color:#0099cc;
+                        font-size: 10px;
+                        text-decoration: underline;
+                        font-weight: normal;
+                    }
+                    .products-content a.product-small-link:hover{
+                        text-decoration: none;
+                        color:#0099cc;
+                    }
+                    #center_products .product-box{
+                        border-color: #006599;
+                        border-style: solid;
+                        border-width : 1px;
+                    }
+                    
+                    
+
+            #div_mod_shoppingcart .header{
+                background-color: #FFFFFF;
+                font-family: Arial;
+                font-weight: Bold;
+                color:#1E7BB3;
+                text-align:left;
+                font-size: 13px;
+                border-width: 0px;
+                border-color: #cccccc;
+                border-style: solid;
+                
+            }
+            #div_mod_shoppingcart .content{
+                background-color: #FFFFFF;
+                font-family: Arial;
+                color:#585858;
+                border-width: 1px;
+                border-color: #cccccc;
+                border-style: solid;
+                font-size:12px;
+            
+            }
+            #div_mod_shoppingcart .content .title{
+                font-weight: bold;
+                font-size: 12px;
+                color: #0099cc;
+            }
+
+            #div_mod_shoppingcart .content a.title-link:link, #div_mod_shoppingcart .content a.title-link:visited{
+                color:#1E7BB3;
+                font-family: Arial;
+                font-style: normal;
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            #div_mod_shoppingcart .content a.title-link:hover{
+                text-decoration: none;
+                color:#1E7BB3;
+            }
+            
+            #div_mod_shoppingcart .content a:link, #div_mod_shoppingcart .content a:visited{
+                color:#0099cc;
+                font-family: Arial;
+                font-style: normal;
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: normal;
+            }
+            #div_mod_shoppingcart .content a:hover{
+                text-decoration: underline;
+                color:#0099cc;
+            }
+
+            #div_mod_shoppingcart b.ctop b{
+                background: #FFFFFF;    
+            }
+            
+        
+
+            #div_mod_search .header{
+                background-color: #FFFFFF;
+                font-family: Arial;
+                font-weight: Bold;
+                color:#1E7BB3;
+                text-align:left;
+                font-size: 13px;
+                border-width: 0px;
+                border-color: #cccccc;
+                border-style: solid;
+                
+            }
+            #div_mod_search .content{
+                background-color: #FFFFFF;
+                font-family: Arial;
+                color:#585858;
+                border-width: 1px;
+                border-color: #cccccc;
+                border-style: solid;
+                font-size:12px;
+            
+            }
+            #div_mod_search .content .title{
+                font-weight: bold;
+                font-size: 12px;
+                color: #0099cc;
+            }
+
+            #div_mod_search .content a.title-link:link, #div_mod_search .content a.title-link:visited{
+                color:#1E7BB3;
+                font-family: Arial;
+                font-style: normal;
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            #div_mod_search .content a.title-link:hover{
+                text-decoration: none;
+                color:#1E7BB3;
+            }
+            
+            #div_mod_search .content a:link, #div_mod_search .content a:visited{
+                color:#0099cc;
+                font-family: Arial;
+                font-style: normal;
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: normal;
+            }
+            #div_mod_search .content a:hover{
+                text-decoration: underline;
+                color:#0099cc;
+            }
+
+            #div_mod_search b.ctop b{
+                background: #FFFFFF;    
+            }
+            
+        
+
+        #div_mod_findthings .header{
+            background-color: #006699;
+            font-family: Arial;
+            font-weight: Bold;
+            color:#FFFFFF;
+            text-align:left;
+            font-size: 13px;
+            border-width: 1px;
+            border-color: #006699;
+            border-style: solid;
+
+        }
+        #div_mod_findthings .content{
+            background-color: #f6f6f6;
+            font-family: Arial;
+            color:#585858;
+            border-width: 1px;
+            border-color: #cccccc;
+            border-style: solid;
+            font-size:12px;
+        
+        }
+        #div_mod_findthings .content .title{
+            font-weight: bold;
+            font-size: 12px;
+            color: #0099cc;
+        }
+
+        #div_mod_findthings .content a.title-link:link, #div_mod_findthings .content a.title-link:visited{
+            color:#1E7BB3;
+            font-family: Arial;
+            font-style: normal;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        #div_mod_findthings .content a.title-link:hover{
+            text-decoration: none;
+            color:#1E7BB3;
+        }
+        
+        #div_mod_findthings .content a:link, #div_mod_findthings .content a:visited{
+            color:#0099cc;
+            font-family: Arial;
+            font-style: normal;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: normal;
+        }
+        #div_mod_findthings .content a:hover{
+            text-decoration: underline;
+            color:#0099cc;
+        }
+
+        #div_mod_findthings b.ctop b{
+            background: #006699;    
+        }
+        
+    
+
+            #div_mod_bestsellers .header{
+                background-color: #FFFFFF;
+                font-family: Arial;
+                font-weight: Bold;
+                color:#1E7BB3;
+                text-align:left;
+                font-size: 13px;
+                border-width: 0px;
+                border-color: #cccccc;
+                border-style: solid;
+                
+            }
+            #div_mod_bestsellers .content{
+                background-color: #FFFFFF;
+                font-family: Arial;
+                color:#585858;
+                border-width: 1px;
+                border-color: #cccccc;
+                border-style: solid;
+                font-size:12px;
+            
+            }
+            #div_mod_bestsellers .content .title{
+                font-weight: bold;
+                font-size: 12px;
+                color: #0099cc;
+            }
+
+            #div_mod_bestsellers .content a.title-link:link, #div_mod_bestsellers .content a.title-link:visited{
+                color:#1E7BB3;
+                font-family: Arial;
+                font-style: normal;
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            #div_mod_bestsellers .content a.title-link:hover{
+                text-decoration: none;
+                color:#1E7BB3;
+            }
+            
+            #div_mod_bestsellers .content a:link, #div_mod_bestsellers .content a:visited{
+                color:#0099cc;
+                font-family: Arial;
+                font-style: normal;
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: normal;
+            }
+            #div_mod_bestsellers .content a:hover{
+                text-decoration: underline;
+                color:#0099cc;
+            }
+
+            #div_mod_bestsellers b.ctop b{
+                background: #FFFFFF;    
+            }
+            
+        
+
+            #div_mod_newtours .header{
+                background-color: #FFFFFF;
+                font-family: Arial;
+                font-weight: Bold;
+                color:#1E7BB3;
+                text-align:left;
+                font-size: 13px;
+                border-width: 0px;
+                border-color: #cccccc;
+                border-style: solid;
+                
+            }
+            #div_mod_newtours .content{
+                background-color: #FFFFFF;
+                font-family: Arial;
+                color:#585858;
+                border-width: 1px;
+                border-color: #cccccc;
+                border-style: solid;
+                font-size:12px;
+            
+            }
+            #div_mod_newtours .content .title{
+                font-weight: bold;
+                font-size: 12px;
+                color: #0099cc;
+            }
+
+            #div_mod_newtours .content a.title-link:link, #div_mod_newtours .content a.title-link:visited{
+                color:#1E7BB3;
+                font-family: Arial;
+                font-style: normal;
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            #div_mod_newtours .content a.title-link:hover{
+                text-decoration: none;
+                color:#1E7BB3;
+            }
+            
+            #div_mod_newtours .content a:link, #div_mod_newtours .content a:visited{
+                color:#0099cc;
+                font-family: Arial;
+                font-style: normal;
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: normal;
+            }
+            #div_mod_newtours .content a:hover{
+                text-decoration: underline;
+                color:#0099cc;
+            }
+
+            #div_mod_newtours b.ctop b{
+                background: #FFFFFF;    
+            }
+            
+        
+
+            #div_mod_whybook .header{
+                background-color: #FFFFFF;
+                font-family: Arial;
+                font-weight: Bold;
+                color:#1E7BB3;
+                text-align:left;
+                font-size: 13px;
+                border-width: 0px;
+                border-color: #cccccc;
+                border-style: solid;
+                
+            }
+            #div_mod_whybook .content{
+                background-color: #FFFFFF;
+                font-family: Arial;
+                color:#585858;
+                border-width: 1px;
+                border-color: #cccccc;
+                border-style: solid;
+                font-size:12px;
+            
+            }
+            #div_mod_whybook .content .title{
+                font-weight: bold;
+                font-size: 12px;
+                color: #0099cc;
+            }
+
+            #div_mod_whybook .content a.title-link:link, #div_mod_whybook .content a.title-link:visited{
+                color:#1E7BB3;
+                font-family: Arial;
+                font-style: normal;
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            #div_mod_whybook .content a.title-link:hover{
+                text-decoration: none;
+                color:#1E7BB3;
+            }
+            
+            #div_mod_whybook .content a:link, #div_mod_whybook .content a:visited{
+                color:#0099cc;
+                font-family: Arial;
+                font-style: normal;
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: normal;
+            }
+            #div_mod_whybook .content a:hover{
+                text-decoration: underline;
+                color:#0099cc;
+            }
+
+            #div_mod_whybook b.ctop b{
+                background: #FFFFFF;    
+            }
+            
+        
+
+            #div_mod_category .header{
+                background-color: #FFFFFF;
+                font-family: Arial;
+                font-weight: Bold;
+                color:#1E7BB3;
+                text-align:left;
+                font-size: 13px;
+                border-width: 0px;
+                border-color: #cccccc;
+                border-style: solid;
+                
+            }
+            #div_mod_category .content{
+                background-color: #FFFFFF;
+                font-family: Arial;
+                color:#585858;
+                border-width: 1px;
+                border-color: #cccccc;
+                border-style: solid;
+                font-size:12px;
+            
+            }
+            #div_mod_category .content .title{
+                font-weight: bold;
+                font-size: 12px;
+                color: #0099cc;
+            }
+
+            #div_mod_category .content a.title-link:link, #div_mod_category .content a.title-link:visited{
+                color:#1E7BB3;
+                font-family: Arial;
+                font-style: normal;
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            #div_mod_category .content a.title-link:hover{
+                text-decoration: none;
+                color:#1E7BB3;
+            }
+            
+            #div_mod_category .content a:link, #div_mod_category .content a:visited{
+                color:#0099cc;
+                font-family: Arial;
+                font-style: normal;
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: normal;
+            }
+            #div_mod_category .content a:hover{
+                text-decoration: underline;
+                color:#0099cc;
+            }
+
+            #div_mod_category b.ctop b{
+                background: #FFFFFF;    
+            }
+            
+        
+
+            #div_mod_specialdeals .header{
+                background-color: #FFFFFF;
+                font-family: Arial;
+                font-weight: Bold;
+                color:#1E7BB3;
+                text-align:left;
+                font-size: 13px;
+                border-width: 0px;
+                border-color: #cccccc;
+                border-style: solid;
+                
+            }
+            #div_mod_specialdeals .content{
+                background-color: #FFFFFF;
+                font-family: Arial;
+                color:#585858;
+                border-width: 1px;
+                border-color: #cccccc;
+                border-style: solid;
+                font-size:12px;
+            
+            }
+            #div_mod_specialdeals .content .title{
+                font-weight: bold;
+                font-size: 12px;
+                color: #0099cc;
+            }
+
+            #div_mod_specialdeals .content a.title-link:link, #div_mod_specialdeals .content a.title-link:visited{
+                color:#1E7BB3;
+                font-family: Arial;
+                font-style: normal;
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            #div_mod_specialdeals .content a.title-link:hover{
+                text-decoration: none;
+                color:#1E7BB3;
+            }
+            
+            #div_mod_specialdeals .content a:link, #div_mod_specialdeals .content a:visited{
+                color:#0099cc;
+                font-family: Arial;
+                font-style: normal;
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: normal;
+            }
+            #div_mod_specialdeals .content a:hover{
+                text-decoration: underline;
+                color:#0099cc;
+            }
+
+            #div_mod_specialdeals b.ctop b{
+                background: #FFFFFF;    
+            }
+            
+        
+
+            #div_mod_continent .header{
+                background-color: #FFFFFF;
+                font-family: Arial;
+                font-weight: Bold;
+                color:#1E7BB3;
+                text-align:left;
+                font-size: 13px;
+                border-width: 0px;
+                border-color: #cccccc;
+                border-style: solid;
+                
+            }
+            #div_mod_continent .content{
+                background-color: #FFFFFF;
+                font-family: Arial;
+                color:#585858;
+                border-width: 1px;
+                border-color: #cccccc;
+                border-style: solid;
+                font-size:12px;
+            
+            }
+            #div_mod_continent .content .title{
+                font-weight: bold;
+                font-size: 12px;
+                color: #0099cc;
+            }
+
+            #div_mod_continent .content a.title-link:link, #div_mod_continent .content a.title-link:visited{
+                color:#1E7BB3;
+                font-family: Arial;
+                font-style: normal;
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            #div_mod_continent .content a.title-link:hover{
+                text-decoration: none;
+                color:#1E7BB3;
+            }
+            
+            #div_mod_continent .content a:link, #div_mod_continent .content a:visited{
+                color:#0099cc;
+                font-family: Arial;
+                font-style: normal;
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: normal;
+            }
+            #div_mod_continent .content a:hover{
+                text-decoration: underline;
+                color:#0099cc;
+            }
+
+            #div_mod_continent b.ctop b{
+                background: #FFFFFF;    
+            }
+            
+        

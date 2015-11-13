@@ -1,0 +1,100 @@
+/*	Copyright (c) 2014, Red Universal de Marketing y Bookings Online, S.A.U (Rumbo) All rights reserved.
+	bvffr (hotels.bravofly.com) 
+*/
+
+/*Commons*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+body,html{font-family:Arial,Helvetica,sans-serif;font-size:12px;}
+body{behavior:url(http://hotels.bravofly.fr/css/PIE.htc);}
+@font-face{font-family:universrmb-boldcn;src:url(http://hotels.bravofly.fr/fonts/universrmb-boldcn.eot?#iefix) format(embedded-opentype), url(http://hotels.bravofly.fr/fonts/universrmb-boldcn.woff) format(woff), url(http://hotels.bravofly.fr/fonts/universrmb-boldcn.ttf) format(truetype), url(http://hotels.bravofly.fr/fonts/universrmb-boldcn.svg#universrmb-boldcn) format(svg);font-weight:400;font-style:normal;color:#000;}
+.univers{font-family:universrmb-cn;}
+.univers_bl{font-family:universrmb-boldcn;}
+.float-left{float:left;}
+.central-banner{margin-top:13px;position:relative;z-index:0;}
+.offer-box{background-color:#FBFBFA;border:1px solid #DDD;border-radius:4px 4px 0 0;display:block;height:193px;padding-top:182px;position:relative;text-decoration:none;width:323px;}
+.offer-box .single-offer:first-child h3{font-size:14px;font-weight:700;color:#0063be;margin-top:7px;}
+.offer-box .offer-description{color:#333;font-size:11px;height:41px;margin-bottom:1px;margin-top:6px;max-height:41px;}
+.offer-box .single-offer:first-child .offer-link-description{border-bottom:1px solid #DDD;font-size:11px;padding-bottom:10px;}
+.offer-box .offer-price .price{color:#0063be;font-weight:700;}
+.overlay-text{background:#0063be;bottom:0;color:#FFF;display:table;font-size:16px;opacity:0.3;position:absolute;width:270px;filter:alpha(opacity=30.0);padding:10px 0 10px 50px;}
+.clearfix:after{clear:both;content:".";display:block;height:0;line-height:0;visibility:hidden;}
+.dx_bottom_banner{float:right;width:298px;border:1px solid #DDD;}
+.dx_bottom_banner .offers .first-offer{margin-top:1px;}
+.dx_bottom_banner .offers .offer{height:92px;background-color:#f2f2f2;margin:0 1px 1px;}
+.dx_bottom_banner .offer .offerContainer{height:95px;position:relative;}
+.dx_bottom_banner .offer .offerContainer span{bottom:0;position:absolute;right:0;}
+.dx_bottom_banner .offers a img{background:none repeat scroll 0 0 #FFF;float:left;height:83px;width:150px;margin:3px 8px 3px 3px;padding:1px;}
+.dx_bottom_banner .offer a img{border:1px solid #CCC;}
+.dx_bottom_banner .offers a h5{font-size:12px;font-weight:700;padding-top:8px;text-decoration:none;color:#0063be;}
+.dx_bottom_banner .offers a p{font-size:11px;line-height:13px;color:#333;padding:4px 8px 4px 4px;}
+.dx_bottom_banner .offers a .offer-link{font-size:11px;color:#0063be;margin:1px 8px 8px 0;}
+#carousel-footer{height:22px;background:#efefef;background-image:url(http://hotels.bravofly.fr/pictures/carousel-footer.png);}
+#carousel-footer .carousel-button{cursor:pointer;width:25px;height:22px;}
+#carousel-footer #arrow-back{float:left;background-image:url(http://hotels.bravofly.fr/pictures/arrowleft-carousel-active.gif);}
+#carousel-footer #arrow-next{float:right;background-image:url(http://hotels.bravofly.fr/pictures/arrowright-carousel-active.gif);}
+#carousel-container .buttons-container{color:#333;display:block;position:absolute;z-index:100;margin:0 0 0 30%;}
+#carousel-container .buttons-container li{background-image:url(http://hotels.bravofly.fr/pictures/circle_off_blue.gif);background-position:center center;background-repeat:no-repeat;cursor:pointer;float:left;height:19px;margin-left:1px;margin-top:0;padding-top:5px;text-align:center;width:20px;color:#ccc;}
+#carousel-container .buttons-container li.selected{background-image:url(http://hotels.bravofly.fr/pictures/circle_on_blue.gif);color:#FFF;}
+#carousel-footer #carousel-back a{display:block;width:25px;height:22px;background:url(http://hotels.bravofly.fr/pictures/arrow_sx_carousel_active_blue.gif) no-repeat;}
+#carousel-footer #carousel-next a{display:block;width:25px;height:22px;background:url(http://hotels.bravofly.fr/pictures/arrow_dx_carousel_active_blue.gif) no-repeat;}
+#carousel-footer #carousel-pagination{padding-top:4px;width:400px;text-align:center;margin:0 auto;}
+#carousel-footer #carousel-pagination a{width:14px;height:14px;display:inline-block;background:url(http://hotels.bravofly.fr/pictures/circle_off_blue.gif) no-repeat;margin:0 5px;}
+#carousel-footer #carousel-pagination a span{display:none;}
+#carousel-container{width:663px;color:#333;border:1px solid #ddd;margin:13px 0;padding:1px;}
+#carousel{color:#333;}
+#carousel .carousel-item{background-color:#FBFBFB;}
+#carousel .carousel-item a .text-overlay{position:absolute;text-align:left;text-shadow:1px 1px 2px #333333, -1px -1px 2px #333;top:15px;width:130px;height:40px;font-size:14px;line-height:18px;font-style:italic;background:#c00000;color:#fff;padding:8px 10px;}
+#carousel .carousel-item a,#carousel .carousel-item a:hover{display:block;text-decoration:none;color:#333;}
+#carousel .carousel-item a:hover{background:#ededed;}
+#carousel .carousel-item .price{font-weight:700;font-size:12px;padding-left:3px;color:#0063be;}
+#carousel .carousel-item h4{font-size:14px;font-weight:700;color:#0063be;margin:12px 9px!important;}
+#carousel .carousel-item .item-destination{font-size:13px;height:14px;color:#0063be;}
+#carousel .carousel-item .item-offer{line-height:22px;padding-bottom:6px;color:#828282;}
+#carousel .carousel-item img.carousel-pic{width:213px;height:120px;border:none;background:#777;}
+#carousel-footer #carousel-back a:hover{background:url(http://hotels.bravofly.fr/pictures/arrow_sx_carousel_over_blue.gif) no-repeat;}
+#carousel-footer #carousel-next a:HOVER{background:url(http://hotels.bravofly.fr/pictures/arrow_dx_carousel_over_blue.gif) no-repeat;}
+#carousel-footer #carousel-pagination a.selected{background:url(http://hotels.bravofly.fr/pictures/circle_on_blue.gif) no-repeat;}
+.box{background:none repeat scroll 0 0 #FFF;border:1px solid #AFC2D6;border-radius:15px 15px;}
+.box.grey{background:none repeat scroll 0 0 #CFDAE6;}
+.box .box-titulo{background:none repeat scroll 0 0 #007DC2;border-radius:15px 15px 0 0;color:#FFF;font-size:16px;text-transform:capitalize;padding:10px;}
+i.legend{font-size:10px;color:gray;font-weight:400;}
+.width-100{width:100%;}
+.clearfix{display:block;}
+.big-box{display:inline;float:left;margin-right:10px;width:670px;margin-top:13px;position:relative;z-index:0;}
+.big-box .offer-box{border-radius:4px 4px 0 0;display:block;height:193px;padding-top:182px;position:relative;text-decoration:none;width:323px;background-color:#FBFBFA;border:1px solid #DDD;}
+.big-box .offer-box a{display:block;text-decoration:none;color:#828282;margin:0;}
+.big-box .offer-box .single-offer:first-child h3{font-size:14px;font-weight:700;margin-top:7px;}
+.big-box .offer-description{font-size:11px;height:41px;margin-bottom:1px;margin-top:6px;max-height:41px;color:#333;}
+.big-box .single-offer:first-child .offer-link-description{border-bottom:1px solid #DDD;}
+.big-box .offer-price .price{font-weight:700;color:#0063be;}
+.big-box .last .offer-link-description{border-bottom:medium none!important;}
+#carousel-container .caroufredsel_wrapper{bottom:0;display:block;float:none;height:263px;left:0;overflow:hidden;position:relative;right:0;text-align:start;top:0;width:664px;z-index:auto;margin:0;}
+#carousel-container .caroufredsel_wrapper #carousel{font-size:11px;overflow:hidden;bottom:auto;float:none;height:263px;left:-7px;position:absolute;right:auto;text-align:left;top:0;width:4732px;z-index:auto;margin:0;}
+#carousel-container .caroufredsel_wrapper #carousel .carousel-item{float:left;width:213px;height:263px;padding-bottom:0;margin:0 8px 0 5px;}
+#carousel .carousel-item a{position:relative;}
+#carousel .carousel-item a p,#carousel .carousel-item a h4{margin:0 9px;}
+#carousel .carousel-item .item-description{height:61px;margin:0 9px;}
+#carousel .carousel-item a span.float-right{margin-right:18px;}
+#block-boxes{float:right;width:300px;min-height:398px;border:1px solid #ddd;}
+#block-boxes .dx_box{width:296px;height:91px;background:#f2f2f2;margin:2px 0 10px 2px;}
+#block-boxes .dx_box .dx_box-image{float:left;width:152px;height:85px;border:1px solid #ccc;margin:2px 0 0 2px;}
+#block-boxes .dx_box .dx_box-image a{float:left;width:150px;height:83px;background:#FFF;}
+#block-boxes .dx_box .dx_box-image img{border:0 none;height:84px;}
+#block-boxes .dx_box .dx_box-txt{float:right;width:135px;margin:10px 0 0;}
+#block-boxes .dx_box .dx_box-txt h4{color:#0063be;font-size:12px;font-weight:700;margin:0;}
+#block-boxes .dx_box .dx_box-txt p{font-size:11px;font-weight:400;color:#333;min-height:35px;margin:8px 0 0;}
+#block-boxes .dx_box .dx_box-txt a{float:right;padding-right:14px;text-decoration:none;color:#0063be;font-size:11px;font-weight:400;}
+#block-boxes .dx_box.last{margin:2px 0 2px 2px !important;}
+#block-boxes .dx_box:hover{background:#e6e6e6;}
+#block-boxes .dx_box:hover .dx_box-image{border:1px solid #0075c5;}
+.single-offer,.big-box .offer-box .single-offer{margin:0 1px;}
+.single-offer a,.offer-box a{color:#828282;display:block;text-decoration:none;margin:0;}
+.offer-wrapper,.offer-box a .offer-wrapper,.big-box .offer-box a .offer-wrapper{padding:5px 10px 0;}
+.offer-box-img,.big-box .offer-box-img{border-top-left-radius:4px;border-top-right-radius:4px;height:182px;left:1px;position:absolute;top:1px;width:321px;}
+.offer-box .offer-price,.big-box .offer-price{float:right;font-size:13px;line-height:16px;margin-top:-2px;}
+.offer-box .offer-price-prefix,.big-box .offer-price-prefix{font-size:11px;}
+.offer-box h3,.big-box .offer-box h3{color:#0063be;font-size:12px;font-weight:700;line-height:15px;}
+.offer-box .offer-link-description,.big-box .offer-box .offer-link-description{font-size:11px;padding-bottom:10px;}
+.dx_bottom_banner .offers .offer a,.bf-vacanze a,.bf-vacanze a:hover,.bf-vacanze a:visited,.bf-vacanze a:link{text-decoration:none;}
+#carousel-footer #carousel-next,.float-right{float:right;}
+#carousel .carousel-item a:hover h4,#block-boxes .dx_box:hover a:hover{text-decoration:underline;}

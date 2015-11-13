@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1F65756B-5347-4F4E-A078-92589EE9D32D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>supermarket_system.My.MyApplication</StartupObject>
+    <RootNamespace>supermarket_system</RootNamespace>
+    <AssemblyName>supermarket_system</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>supermarket_system.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>supermarket_system.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\supermarket\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chall_form.Designer.vb">
+      <DependentUpon>Chall_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chall_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class11.vb" />
+    <Compile Include="Deliver form.Designer.vb">
+      <DependentUpon>Deliver form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Deliver form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deliver_View.Designer.vb">
+      <DependentUpon>Deliver_View.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Deliver_View.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_form.Designer.vb">
+      <DependentUpon>Employee_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_master.Designer.vb">
+      <DependentUpon>employee_master.vb</DependentUpon>
+    </Compile>
+    <Compile Include="employee_master.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item detail.Designer.vb">
+      <DependentUpon>Item detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Item detail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login form.Designer.vb">
+      <DependentUpon>Login form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member View.Designer.vb">
+      <DependentUpon>Member View.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Member View.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Members_Record.Designer.vb">
+      <DependentUpon>Members_Record.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Members_Record.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="purchase form.Designer.vb">
+      <DependentUpon>purchase form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="purchase form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase master form.Designer.vb">
+      <DependentUpon>Purchase master form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase master form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="purchase_View.Designer.vb">
+      <DependentUpon>purchase_View.vb</DependentUpon>
+    </Compile>
+    <Compile Include="purchase_View.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purch_master.Designer.vb">
+      <DependentUpon>Purch_master.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Purch_master.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register form.Designer.vb">
+      <DependentUpon>register form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="register form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale Detail form.Designer.vb">
+      <DependentUpon>Sale Detail form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sale Detail form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section form.Designer.vb">
+      <DependentUpon>Section form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Section form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supermarket home Page.Designer.vb">
+      <DependentUpon>Supermarket home Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supermarket home Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply form.Designer.vb">
+      <DependentUpon>Supply form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supply View.Designer.vb">
+      <DependentUpon>Supply View.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supply View.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chall_form.resx">
+      <DependentUpon>Chall_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deliver form.resx">
+      <DependentUpon>Deliver form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deliver_View.resx">
+      <DependentUpon>Deliver_View.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_form.resx">
+      <DependentUpon>Employee_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_master.resx">
+      <DependentUpon>employee_master.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item detail.resx">
+      <DependentUpon>Item detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login form.resx">
+      <DependentUpon>Login form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member View.resx">
+      <DependentUpon>Member View.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members_Record.resx">
+      <DependentUpon>Members_Record.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="purchase form.resx">
+      <DependentUpon>purchase form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase master form.resx">
+      <DependentUpon>Purchase master form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="purchase_View.resx">
+      <DependentUpon>purchase_View.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purch_master.resx">
+      <DependentUpon>Purch_master.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="register form.resx">
+      <DependentUpon>register form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale Detail form.resx">
+      <DependentUpon>Sale Detail form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section form.resx">
+      <DependentUpon>Section form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supermarket home Page.resx">
+      <DependentUpon>Supermarket home Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply form.resx">
+      <DependentUpon>Supply form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supply View.resx">
+      <DependentUpon>Supply View.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

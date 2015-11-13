@@ -1,0 +1,36 @@
+Dim Query As String
+
+    Dim con As MySqlConnection = New MySqlConnection("Data Source=localhost;Database=test;User ID=root;Password=;")
+    con.Open()
+
+    Query = "UPDATE userreg SET UserName ='" + txtUserName.Text + "',"
+    Query = Query + "Age = " + txtAge.Text
+    Query = Query + " WHERE idUserReg = " + txtUserRegId.Text
+
+    Dim cmd As MySqlCommand = New MySqlCommand(Query, con)
+    MsgBox(Query)
+    Dim i As Integer = cmd.ExecuteNonQuery()
+    If (i > 0) Then
+        lblMsg.Text = "Record is Successfully Updated"
+    Else
+        lblMsg.Text = "Record is not Updated"
+    End If
+    con.Close()
+
+And this is for Delete Code :
+
+ Dim Query As String
+
+    Dim con As MySqlConnection = New MySqlConnection("Data Source=localhost;Database=test;User ID=root;Password=;")
+    con.Open()
+    Query = "Delete FROM userreg WHERE idUserReg  =" + txtUserRegId.Text
+
+    Dim cmd As MySqlCommand = New MySqlCommand(Query, con)
+    MsgBox(Query)
+    Dim i As Integer = cmd.ExecuteNonQuery()
+    If (i > 0) Then
+        lblMsg.Text = "Record is Successfully Deleted"
+    Else
+        lblMsg.Text = "Record is not Deleted"
+    End If
+    con.Close()

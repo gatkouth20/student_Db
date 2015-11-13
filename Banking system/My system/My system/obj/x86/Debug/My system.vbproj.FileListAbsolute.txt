@@ -1,0 +1,30 @@
+C:\Users\USER\Desktop\Banking system\My system\My system\bin\Debug\My system.exe
+C:\Users\USER\Desktop\Banking system\My system\My system\bin\Debug\My system.pdb
+C:\Users\USER\Desktop\Banking system\My system\My system\bin\Debug\My system.xml
+C:\Users\USER\Desktop\Banking system\My system\My system\obj\x86\Debug\My_system.Form1.resources
+C:\Users\USER\Desktop\Banking system\My system\My system\obj\x86\Debug\My_system.Resources.resources
+C:\Users\USER\Desktop\Banking system\My system\My system\obj\x86\Debug\My system.vbproj.GenerateResource.Cache
+C:\Users\USER\Desktop\Banking system\My system\My system\obj\x86\Debug\My system.exe
+C:\Users\USER\Desktop\Banking system\My system\My system\obj\x86\Debug\My system.xml
+C:\Users\USER\Desktop\Banking system\My system\My system\obj\x86\Debug\My system.pdb
+C:\Users\USER\Desktop\Banking system\My system\My system\bin\Debug\Banking managment.accdb
+C:\Users\USER\Desktop\Banking system\My system\My system\bin\Debug\My system.exe.config
+C:\Users\USER\Desktop\Banking system\My system\My system\obj\x86\Debug\My_system.Opening_Account.resources
+C:\Users\USER\Desktop\Banking system\My system\My system\obj\x86\Debug\My_system.ATM_Form.resources
+C:\Users\USER\Desktop\Banking system\My system\My system\obj\x86\Debug\My_system.CheckBook_form.resources
+C:\Users\USER\Desktop\Banking system\My system\My system\obj\x86\Debug\My_system.Deposit_form.resources
+C:\Users\USER\Desktop\Banking system\My system\My system\obj\x86\Debug\My_system.Loan_form.resources
+C:\Users\USER\Desktop\Banking system\My system\My system\obj\x86\Debug\My_system.Opening_Account_form.resources
+C:\Users\USER\Desktop\Banking system\My system\My system\obj\x86\Debug\My_system.Transaction_form.resources
+C:\Users\USER\Desktop\Banking system\My system\My system\obj\x86\Debug\My_system.Withdrawal_form.resources
+C:\Users\USER\Desktop\Banking system\My system\My system\obj\x86\Debug\My_system.Student_Account_form.resources
+C:\Users\USER\Desktop\Banking system\My system\My system\obj\x86\Debug\My_system.Introducer_form.resources
+C:\Users\USER\Desktop\Banking system\My system\My system\obj\x86\Debug\My_system.for_official.resources
+C:\Users\USER\Desktop\Banking system\My system\My system\obj\x86\Debug\My_system.Home_info.resources
+C:\Users\USER\Desktop\Banking system\My system\My system\obj\x86\Debug\My_system.About_form.resources
+C:\Users\USER\Desktop\Banking system\My system\My system\obj\x86\Debug\My_system.Service_form.resources
+C:\Users\USER\Desktop\Banking system\My system\My system\obj\x86\Debug\My_system.Login_form.resources
+C:\Users\USER\Desktop\Banking system\My system\My system\obj\x86\Debug\My_system.Loan_View.resources
+C:\Users\USER\Desktop\Banking system\My system\My system\obj\x86\Debug\My_system.Transaction_view.resources
+C:\Users\USER\Desktop\Banking system\My system\My system\obj\x86\Debug\My_system.Deposit_View.resources
+C:\Users\USER\Desktop\Banking system\My system\My system\obj\x86\Debug\My_system.LoginForm1.resources

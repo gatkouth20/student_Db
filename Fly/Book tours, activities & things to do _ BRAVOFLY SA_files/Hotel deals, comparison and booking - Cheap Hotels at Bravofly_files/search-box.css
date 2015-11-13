@@ -1,0 +1,658 @@
+/*
+Copyright (c) 2013, Red Universal de Marketing y Bookings Online, S.A.U. (Rumbo) All rights reserved. version:0.1
+
+BVF FR( hotel.bravofly.de )
+*/
+
+/* ESTRUCTURA */
+#body #search-box div.search-box{border:1px solid #67A2A3;}
+#body #search-box{/*clear:both; border:none*/ width:435px;}
+#body #search-box div.top{ height:5px;background:transparent url(/pictures/pix-green.gif) repeat-x;margin: 1px 1px 8px 1px;margin: 1px 1px 0 1px; padding-bottom: 10px}
+#body #search-box div.title-search{ border-bottom: 1px solid #67A2A3;width:97%; height:20px; position:relative}
+/*BVF*/#body #search-box input.checkbox, #body #search-box input.radio {  vertical-align: middle;}
+#body #search-box input.selected{border-color:#608585}
+#body #search-box input.disabled{background-color:#E4E1E1}
+#body #search-box label {display:block;margin-bottom:2px;}
+#body #search-box label.radio,#body #search-box label.checkbox{display:inline; margin-right:0}
+#body #search-box input.highlight, #body #search-box select.highlight {font-size:1em;padding:4px;}
+#body #search-box input.highlight, #body #search-box select.selected {font-size:1em;padding:4px;}
+#body #search-box li{ margin-top:0}
+
+/* error*/
+#body #search-box div.error{color:#CC0000;margin:10px 10px 0 10px;padding:3px 5px;}
+#body #search-box.has-error{height:auto}
+#body #search-box input.error, #body #search-box select.error, #body #search-box fieldset.error{border:1px solid #CC0000;}
+
+/* CONTENIDO */
+#body #group-left h1{color:#608585; padding:6px 10px;font-size:24px;margin:0;font-family:Arial,Helvetica,Verdana;}
+#body #search-box h2{text-align:left;padding: 6px 10px; color:#67A2A3; font-weight:bold;margin:4px 0 5px 0; background-color:#FFF}
+#body #search-box fieldset{margin:13px 0;border:0}
+#body #search-box .calicon-link input{border:none;padding:1px 0 0 3px}
+#body #search-box input.selected, #body #search-box div.selected {border-color:#339999}
+#body #search-box span.calicon-link {cursor:pointer;left:-25px;position:relative;top:5px;*top:2px;z-index:1;}
+
+/* tamaño fijo inputs */
+#body #search-box .dates input {width:70px; padding-left:8px; height:27px; padding-bottom:0px; padding-top:0px; } 
+#body #search-box .locations input {width:115px;}
+#body #search-box-hotel .locations input {width:489px; height:27px; padding: 0 0 0 9px; width:292px;}
+
+#body #search-box div.other-options{margin:3px 8px 0;padding:0 0 6px}
+#body #search-box div.other-options p{font-weight:bold;margin:0 0 8px}
+#body #search-box fieldset div.price, #body #search-box fieldset div.time-table{float:left;width:50%}
+#body #search-box div.button{background-color:#BDCFD1;height:46px;text-align:right}
+
+#body #search-box-flight div.button{margin:10px 1px 1px 1px}
+#body #search-box-hotel div.button{margin:16px 1px 1px 1px}
+#body #search-box-fh div.button{margin:16px 1px 1px 1px;*margin:42px 1px 1px 1px}
+#body #search-box-train div.button{margin:10px 1px 1px 1px}
+#body #search-box div.button img{cursor:pointer;float:right;margin:6px; padding-bottom:5px;}
+
+#body #search-box-flight div.button div.check-in{font-weight:bold; color:#FFF; float:left; padding-top:16px; margin-left:10px;}
+
+/*mas opciones*/
+#body #search-box fieldset.more-options{margin:8px;padding:0}
+#body #search-box fieldset.more-options legend {margin-left:20px; cursor:pointer}
+#body #search-box fieldset.more-options label, #body #search-box fieldset.more-options input,  
+#body #search-box fieldset.more-options select, #body #search-box fieldset.more-options option{font-weight:normal;color:#333;} 
+/*BVF*/#body #search-box fieldset #more-options-link{color: #0063be; font-size: 12px; padding-left:0px; width:100px;}
+
+/*DIVS OCULTOS*/
+#body #search-box div.oculto{background-color:#FFF;border:1px solid #CCCCCC;position:absolute;z-index:1;}
+#body #search-box div.oculto fieldset{border:0 none;margin-left:8px;padding:2px}
+#body #search-box div.oculto div.title{background-color:#0063be;height:20px;border-radius: 5px 5px 0 0; padding-top:4px;}
+
+#body #search-box div.oculto div.title span {color:#FFF;font-weight:bold;margin:1px 0 0 8px; float:left; font-size:11px;}
+#body #search-box div.oculto div.title span.close{float:right;}
+#body #search-box div.oculto div.button{ margin:0; background:none; height:auto;}
+span.close { display: inline-block; height: 15px; width: 24px; cursor:pointer;}
+#body #search-box div#agesForm.oculto div.button input#setAges.btn { margin-bottom:10px;  margin-right:15px; height:auto; width:auto; cursor:pointer;}
+
+
+
+/*div ciudades*/
+#ciudadesEspanolas{left:342px;top:20px;width:300px}
+#ciudadesInternacionales{left:342px;top:40px;width:350px}
+
+/*div edades*/
+#body #search-box div.ages{left: 342px; top: 125px;width:220px}
+#body #search-box div.ages p{ font-weight:bold; margin: 5px 10px}
+
+#body #search-box div.ages-resume{font-size: 12px; margin: 29px 0 -3px 10px;  width: auto;}
+/*BVF*/#body #search-box.lite div.ages-resume{font-size: 12px; float:right;}
+/*BVF*/ #body #search-box #agesError{float:left}
+.clearer {clear:both;line-height:0;}
+
+/*Search-Box-Main*/
+#body #search-header li{background:url(/pictures/fondo-deg-verde.gif) repeat-x;cursor:pointer;display:inline;float:left;font-weight:bold;height:18px;margin:0 1px 0 0;padding:4px 18px 0;border-left:1px solid #75AE11;border-right:1px solid #75AE11;}
+#body #search-header li a{text-decoration:underline;color:#333}
+#body #search-header a:hover{color:#FFF}
+#body #search-header li span{color:#FFF}
+#body #search-header .active{background:url(/pictures/fondo-titulo-busc-activo.gif) repeat-x;}
+#body #search-header li.sbTab-link-last{background:url(/pictures/borde-buscador.gif) no-repeat right top;width:68px; padding: 4px 0 0 12px; border-right:none}
+#body #search-header #sbTab-link-vacations.sbTab-link .active{background-image:url(/pictures/borde-buscador-rmb-activo.gif);background-repeat:no-repeat; width:53px; *width:83px; padding: 4px 20px 0 10px; border:none; height:15px;*height:19px;padding:4px 15px 0;text-align:center}
+
+/*Search-Box-Flight*/
+#body #search-box-flight #more-options ul{margin-top:6px;line-height:18px;}
+
+/*Descuentos*/
+#body #search-box div#search-box-flight fieldset.discount #discounts div{padding:0 0 0 10px;margin:0 0 8px;}
+#body #search-box div#search-box-flight fieldset.discount div.discount{border:1px solid #CCCCCC;background-color:#FFF;float:left;width:100%;}
+#body #search-box div#search-box-flight fieldset.discount div.discount p.title{clear:both;margin:4px 0;padding:2px 2px 2px 10px;color:#608585;font-weight:bold;font-size:11px;}
+#body #search-box div#search-box-flight fieldset.discount #discounts div#largeFamily-disc{margin:0 5px 8px 0;float:left;width:45%;}
+#body #search-box div#search-box-flight fieldset.discount div.discount label{font-weight:bold;}
+#body #search-box div#search-box-flight fieldset.discount div.discount ul{margin-top:3px;}
+#body #search-box div#search-box-flight fieldset.discount div.discount li{line-height:16px;}
+#body #search-box div#search-box-flight fieldset.discount div.discount input{margin-right:2px;}
+#body #search-box #resident-disc{margin:0 0 0 8px;padding:0 0 0 8px;border-left:1px dotted #999;}
+/*Fin Descuentos*/
+
+/*Search-Box-Hotel*/
+#body #search-box-hotel fieldset.locations ul{line-height:18px;}
+#body.hotel #search-box #ciudadesEspanolas{top:240px; left:380px}
+#body.hotel #search-box #ciudadesInternacionales{border: 2px solid #DDDDDD;border-radius: 5px 5px 5px 5px;margin-bottom: 10px;top:262px;left:380px}
+#body.hotel #search-box #agesForm{top:186px; left:350px}
+
+/*Estilos para SuperSearcher.html*/
+/*Caja*/
+#body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador { float: left; margin: 0; width: 310px; padding:0; position: static; }
+#body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box #search-box-sup { background: url("/pictures/background-filter.gif") repeat-x scroll 0 0 transparent; float: left; height: 25px; margin: 0; width: 310px; }
+#body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box #search-box-sup h2 { background-color:transparent; color: #FFF; float: left; font-size: 12px; font-weight: bold; height: 25px; line-height: 24px; margin: 0 0 0 10px; padding: 0; width: 300px; }
+#body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box #search-box-body { background-color: #FFF; border: 1px solid #CCCCCC; float: left; margin: 0; min-height: 265px; width: 308px; }
+/*Ayuda aeropuertos*/
+#body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #popup-ayuda-destinos { left: 200px; top: 367px; border: 1px solid #CCCCCC; }
+#body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #popup-ayuda-destinos div.cerrar { float: right; font-size: 14px; margin: -14px 16px 0 0; }
+/*Form*/
+#body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box form#flightForm { float: left; margin: 0; padding: 0; width: 308px; }
+#body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box form#flightForm #error { background-color: #FFEEEE; border: 1px solid #CC0000; clear: both; color: #CC0000; float: left; margin: 2px 2px 0; padding: 5px 10px; width: 282px; }
+/*Filas*/
+#body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box form#flightForm fieldset#fila-origen-destino, #body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box form#flightForm fieldset#fila-ida-vuelta { border:0 none; padding:0; float: left; margin: 5px 0 0; width: 308px; }
+#body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box form#flightForm fieldset#fila-origen-destino #dep-input, #body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box form#flightForm fieldset#fila-origen-destino #arr-input { float: left; height: 60px; margin: 0 0 0 16px; width: 292px; }
+#body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box form#flightForm fieldset#fila-ida-vuelta #ida-input, #body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box form#flightForm fieldset#fila-ida-vuelta #vuelta-input { border: 1px solid #999999; float: left; height: 25px; margin: 0 0 14px 15px; width: 276px; }
+/*Labels*/
+#body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box form#flightForm fieldset#fila-origen-destino #dep-input label, #body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box form#flightForm fieldset#fila-origen-destino #arr-input label { height: 22px; line-height: 24px; float: left; font-size: 10px; height: 25px; line-height: 25px; margin: 0 0 0 5px; width: 287px; }
+#body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box form#flightForm fieldset#fila-ida-vuelta #ida-input label, #body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box form#flightForm fieldset#fila-ida-vuelta #vuelta-input label { float: left; height: 25px; line-height: 22px; margin: 0 0 0 5px; width: 90px; }
+/*Inputs*/
+#body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box form#flightForm fieldset#fila-origen-destino #dep-input input#depCity, #body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box form#flightForm fieldset#fila-origen-destino #arr-input input#arrCity { border: 1px solid #999999; color: #333; font-size: 10px; height: 25px; *height:18px; height:18px \9; margin: 0; padding: 0 0 0 5px; *padding-top:7px; padding-top:7px \9; width: 270px; }
+/*Iconos*/
+#body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box form#flightForm fieldset#fila-origen-destino #dep-input span.ajax-loader, #body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box form#flightForm fieldset#fila-origen-destino #arr-input span.ajax-loader { float: right; left: 20px; position: relative; top: -22px; width: 20px; *margin-right:20px;}
+#body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box form#flightForm fieldset#fila-origen-destino #dep-input span.ajax-loader img, #body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box form#flightForm fieldset#fila-origen-destino #arr-input span.ajax-loader img { float: right; height: 16px; margin: 0 42px 0 0; width: 16px; }
+#body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box form#flightForm fieldset#fila-origen-destino #dep-input span#depAirports, #body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box form#flightForm fieldset#fila-origen-destino #arr-input span#arrAirports { cursor: pointer; float: right; left: 0; margin: 0; *margin-right:20px;
+position: relative; top: -22px; width: 20px; }
+#body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box form#flightForm fieldset#fila-origen-destino #dep-input span#depAirports img, #body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box form#flightForm fieldset#fila-origen-destino #arr-input span#arrAirports img { float: right; height: 17px; margin: 0 20px 0 0; width: 20px; }
+/*Selects*/
+#body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box form#flightForm fieldset#fila-ida-vuelta #ida-input select#depMonth, #body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box form#flightForm fieldset#fila-ida-vuelta #vuelta-input select#retMonth { background: none repeat scroll 0 0 transparent; border: 0 none; float: right; font-size: 10px; height: 20px; margin: 2px 2px 0 0; padding: 2px; text-align: left; width: 132px; color:#333; }
+/*Boton buscar*/
+#body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box form#flightForm .btn-search { float: right; margin: 0 14px 19px 0; *margin-top:20px;
+}
+#body #wrap.superbuscador #main-content #main-content-izquierda #search-box.superbuscador #super-search-box form#flightForm .btn-search input#search-box-submit { background: url("/pictures/boton-buscar.gif") no-repeat scroll 0 0 transparent; border: 0 none; cursor: pointer; height: 25px; width: 68px; }
+/**/
+
+
+/*Search-Box SEO HOTELES*/
+#body #search-seo-hotel{width:309px;*width:315px;border-top:solid 1px #77AF14;background-color:#F6FCEC;padding:8px 2px 0 2px; z-index:20}
+#body #search-seo-hotel form{ margin:0}
+#body .borde-seohotel{width:315px;background-image:url(/pictures/borde-buscador-seohotel.jpg); background-repeat:no-repeat}
+
+/*Search-Box .DO*/
+#body.search-error #search-box-hotel input.highlight, #body.error #search-box-hotel select.highlight{*height:22px}
+#body.search-error{position:relative}
+#body.search-error #search-box #ciudadesEspanolas{left:370px;top:58px;}
+#body.search-error #search-box #ciudadesInternacionales{left:370px;top:84px}
+#body.search-error #search-box #agesForm{left:395px;top:220px;}
+
+/*SEARCH-BOX LITE HOTEL*/
+/*cabecera*/
+#body.avail #search-box.lite.hotel{width:780px;position:relative;margin:0 0 15px 0}
+/*BVF*/#body.avail #search-box.lite.hotel .header-search{background-color: #0063be; border-radius: 5px 5px 0 0; color: #FFF; font-weight: bold; height: 21px; padding: 9px 20px 10px; width: 739px;}
+/*BVF*/#body.avail #search-box.lite.hotel .header-search h1{color: #FFF;    font-size: 20px; padding:0; margin:0;}
+#body.avail #search-box.lite.hotel .header-search div.left{float:left}
+#body.avail #search-box.lite.hotel .header-search .borde-search-box-lite {display:none}
+#body.avail #search-box.lite.hotel .header-search .borde-search-box-lite img{float:right;height:24px}
+/*cabecera*/
+/*BVF*/#body.avail #search-box.lite.hotel .middle{border: 0 solid #9285AA;    padding:20px; min-height:100px;}
+#body.avail #search-box.lite.hotel .middle fieldset{margin-top:0;}
+#body.avail #search-box.lite.hotel .more-options min .options-two{ width:600px;}
+#body.avail #search-box.lite.hotel .input-field .origen{margin:3px 0 3px 10px}
+#body.avail #search-box.lite.hotel fieldset.locations{width:750px;margin:0 0 0 10px;padding:10px 0 0}
+/*BVF*/#body.avail #search-box.lite.hotel fieldset.more-options{}
+#body.avail #search-box.lite.hotel fieldset.more-options #more-options-link{ margin-left:0;}
+#body.avail #search-box.lite.hotel fieldset.more-options legend{background:url(/pictures/less.gif) no-repeat scroll 2px 3px transparent;font-size:11px;color:#2F7375;cursor:pointer;padding-left:12px;text-decoration:underline}
+/*BVF*/#body.avail #search-box.lite.hotel fieldset.min{border:0px; margin-left: 0; position: relative; top: 20px;}
+/*BVF*/#body.avail #search-box.lite.hotel div.min{display: block;    margin-top: 18px;}
+#body.avail #search-box.lite.hotel fieldset.more-options.min legend{background:url(/pictures/more.gif) no-repeat scroll 85px 3px transparent}
+/*BVF*/#body.avail #search-box.lite.hotel fieldset.more-options.max legend{background:url(/pictures/less.gif) no-repeat scroll 85px 4px transparent}
+/*BVF*/#body.avail #search-box.lite.hotel fieldset.max{border:0px; margin-left: 0; position: relative; top: 20px; width:88%;}
+#body.avail #search-box.lite.hotel div.max{display:none}
+#body.avail #search-box.lite.hotel fieldset.more-options.max .options-one{position:relative}
+#body.avail #search-box.lite.hotel form{background-image:url(/pictures/bg-inf-lite-hotel.jpg);background-position:center bottom;background-repeat:no-repeat;border:medium none;float:left;min-height:70px;padding:0 0 20px;width:780px}
+/*BVF*/#body.avail #search-box.lite.hotel .select-cal{cursor: pointer;    float: right;    height: 18px;    padding: 6px 3px 0 0;    width: 8px;}
+#body.avail #search-box.lite.hotel .icono-destinos{height:18px;width:19px;margin:0px 0px 0 0px;background:url(pictures/IcoAyudaDesti.gif) no-repeat scroll 0 center transparent}
+#body.avail #search-box.lite.hotel .icono-calendario{height:18px;width:19px;margin:0px 0px 0 0px;background:url(/pictures/icoCalendar.gif) no-repeat scroll 0 center transparent}
+/*BVF*/#body.avail #search-box.lite.hotel .button{background: none repeat scroll 0 0 #F5F6FA;    height: auto;}
+#body.avail #search-box.lite.hotel .button a{text-decoration:none}
+/* Capa de las Edades */
+
+/*BVF SEARCH #body.avail #search-box.lite.hotel #agesForm .button{background: none repeat scroll 0 0 #fff; height: auto;}*/
+/*BVF SEARCH*/#body.avail #search-box.lite.hotel #agesForm .button{height: auto;}
+/*BVF*/#body.avail #search-box.lite.hotel .ages{border:1px solid #75AE11;box-shadow:0 0 8px #666;-webkit-box-shadow:0 0 8px #666;position:absolute;left:550px;top:0px;background-color:#FFF;padding:0 0 8px 0;z-index:1}
+/*BVF*/#body.avail #search-box.lite.hotel #more-options .ages p { margin: 20px 0px 5px 0px;}
+/*BVF SEARCH #body.avail #search-box.lite.hotel div#agesForm{border:1px solid #0063be; border-radius:5px; box-shadow:0 0 10px #666;-webkit-box-shadow:0 0 8px #666;position:absolute;left:550px;top:110px;background-color:#FFF;padding:0 0 8px 0;z-index:1; width:265px;}*/
+/*BVF SEARCH*/#body.avail #search-box.lite.hotel div#agesForm{border:2px solid #DDD; border-radius:5px; box-shadow:0 0 10px #666;-webkit-box-shadow:0 0 8px #666;position:absolute;left:550px; padding:0 0 8px 0;z-index:1; width:220px; background-color:#F5F6FA}
+/*BVF SEARCH*/#body.avail #search-box.lite.hotel #agesForm .room_age{ padding-left:10px;}
+/*BVF*/#body.avail #search-box.lite.hotel #agesForm div#select-child1, #body.avail #search-box.lite.hotel #agesForm div#select-child2, #body.avail #search-box.lite.hotel #agesForm div#select-child3, #body.avail #search-box.lite.hotel #agesForm div#select-child4, #body.avail #search-box.lite.hotel #agesForm div#select-child5, #body.avail #search-box.lite.hotel #agesForm div#select-child6, #body.avail #search-box.lite.hotel #agesForm div#select-child7, #body.avail #search-box.lite.hotel #agesForm div#select-child8,#body.avail #search-box.lite.hotel #agesForm div#select-child9, #body.avail #search-box.lite.hotel #agesForm div#select-child10, #body.avail #search-box.lite.hotel #agesForm div#select-child11, #body.avail #search-box.lite.hotel #agesForm div#select-child12, #body.avail #search-box.lite.hotel #agesForm div#select-child13, #body.avail #search-box.lite.hotel #agesForm div#select-child14, #body.avail #search-box.lite.hotel #agesForm div#select-child15{background-color: #F5F6FA;border: 0px; font-size:12px; width:175px; color:#333333; font-weight:normal;}
+
+
+
+
+#body.avail #search-box.lite.hotel #more-options  #agesForm label {font-weight:normal!important;}
+#body.avail #search-box.lite.hotel #more-options  #agesForm fieldset{ margin:0px;}
+#body.avail #search-box.lite.hotel #more-options  #agesForm .room_age input { width:17px!important; height:17px; border:1px solid #339999; float:right; font-size:12px; margin-top:3px;}
+
+/*BVF SEARCH #body.avail #search-box.lite.hotel .ages .title{background-color:#FF0000;color:#FFF;font-weight:bold;height:12px;padding:5px}
+#body.avail #search-box.lite.hotel .ages #title-children{background-color:#FF0000;color:#FFF;font-weight:bold;height:12px;padding:5px}*/
+/*BVF SEARCH*/ #body.avail #search-box.lite.hotel .ages #title-children{/*background-color:#0063be*/;color:#ffffff;font-weight:bold;height:20px;padding:0px 5px 5px; border-radius:5px 5px 0 0; border-bottom:1px solid #ddd; background-color:#0063be}
+#body.avail #search-box.lite.hotel .ages p{margin:10px 0 0 0}
+/*BVF*/#body.avail #search-box.lite.hotel .ages span{float:left; margin:5px 0 0 5px; font-weight:bold;}
+#body.avail #search-box.lite.hotel .ages span.close{float:right}
+#body.avail #search-box.lite.hotel .ages .arrow{left:-6px;position:absolute;top:1px}
+#body.avail #search-box.lite.hotel .ages .button input{color:#fff;font-weight:bold}
+/*BVF*/#group-right #buscador #search-box {    background-color: #F5F6FA;    border: 1px solid #DDDDDD;    border-radius: 5px 5px 5px 5px;  font-family: Arial, Helvetica, sans-serif;    font-size: 12px;    margin-bottom: 10px;    min-height: 124px;;    padding: 1px;    width: 779px;}
+/*BVF*/#body.avail #group-right #search-box fieldset .input-fld span.ajax-loader {    cursor: default;    position: absolute;    right: 2px;    top: 4px;}
+/*BVF*/#search-box #location-dep input {    background: none repeat scroll 0 0 transparent;    border: medium none;    cursor: text;    float: left;    font-size: 10px;    height: 12px;    margin: 6px 0 0;   outline: 0 none !important;    padding: 0 0 0 5px;    vertical-align: middle;    width: 125px;}
+/*BVF*/#body.avail #group-right #search-box fieldset .date-box.dep {position: relative; width: 130px;}
+/*BVF*/#body.avail #group-right #search-box fieldset .locations.input-fld {    position: relative;    width: 120px;}
+/* SEARCH-BOX LITE HOTEL */
+/*BVF*/ #body.avail #group-right #location-dep.w150px{width:131px; margin-right:15px; border:1px solid #CCCCCA;}
+/*BVF*/ #body.avail #group-right #location-dep.input-fld{ margin-right:111px; border:0px; padding:0; background-color:#F5F6FA}
+/*BVF*/ #body.avail #group-right #location-dep input{width:120px;}
+/*BVF*/ #body.avail #group-right #search-box #location-dep input{background: none repeat scroll 0 0 #FFFFFF;border: 1px solid #CCCCCA !important;font-size: 12px;height: 23px;margin: 1px 0 0;    vertical-align: middle; width: 180px !important;}
+/*BVF*/ #body.avail #group-right #search-box fieldset .locations.input-fld{width:120px;}
+/*BVF*/ #body.avail #group-right div.form-col {    float: left;    font-size: 11px;    height: 25px;    margin: 0 12px 0 0; width:100px;}
+/*BVF*/#body.avail #group-right div.locations.form-col { float: left; font-size: 11px; height: 25px; margin: 0 109px 0 0;}
+/*BVF*/ #body.avail #group-right div.form-col.ret {    margin: 0; border:0px; background-color:#F5F6FA}
+#body.avail #group-right .form-col.input-fld label{ font-size:12px}
+/*BVF*/ /*body.avail #group-right .form-col.input-fld{width:160px;}*/
+/*BVF*/ #body.avail #group-right .form-col.dep.input-fld{width:160px; border:0px; background-color:#F5F6FA; margin-right:14px;}
+/*BVF*/ #body.avail #group-right .form-col.input-fld label{ font-size:12px; margin-bottom:0px; padding:0;}
+/*BVF*/#body #group-right  #search-box .dep.date-box input {height: 23px; padding-bottom: 0;padding-left: 5px; padding-top: 0; width: 91px !important; border:1px solid #CCCCCA !important; background-color:#fff; font-size:12px; margin-top:1px;}
+/*BVF*/ #body #search-box .ret.date-box input{height: 23px; padding-bottom: 0;padding-left: 5px; padding-top: 0; width: 91px !important; border:1px solid #CCCCCA !important; background-color:#fff; font-size:12px; margin-top:1px;}
+/*BVF*/#body #group-right #search-box .dep.date-box span.calicon-link { cursor: pointer;position: absolute; top: 22px;  z-index: 1; margin-left:73px;}
+/*BVF*/#body #group-right #search-box .ret.date-box span.calicon-link {cursor: pointer; margin-left: 80px;position: absolute; top: 22px; z-index: 1;}
+/*BVF*/#body #group-right #search-box span.calicon-link {background-image: url("/pictures/sprite-search-icons.png"); background-repeat: no-repeat; display: inline-block; height: 16px; left: 0 !important;  width: 20px;}
+/*BVF*/#body #group-right .fieldates{ margin-bottom:10px;}
+
+
+#body #group-right div.input-fld {height: 27px; padding-bottom: 0;padding-left: 8px; padding-top: 0; width: 91px !important;}
+/*BVF*//*#body  #group-right div.input-fld input{ width:62px;  font-size:12px;}*/
+/*BVF*/ #body.avail #group-right .input-fld-off.area{font-size: 12px; margin-top: 25px; width: 115px;}
+/*BVF*/ #body.avail #group-right .input-fld-off.area input{width:14px;}
+/*BVF*/#body.avail #group-right .select-cal #showCalDep {margin-left: 16px;}
+/*BVF*/#body.avail #group-right .select-cal #showCalRet {margin-left: -14px;}
+/*BVF*/#body.avail #group-right div.input-fld #arrHotel {background: none repeat scroll 0 0 #FFFFFF;border: 1px solid #CCCCCA !important;font-size: 12px; height: 23px; margin: 1px 0 0; vertical-align: middle; width: 186px !important;}
+#body #group-right #search-box .locations input {    background-color: #FFFFFF;    border: 1px solid #CCCCCA !important;    font-size: 12px;    height: 27px;    margin-top: 1px;    padding-bottom: 0;    padding-left: 5px;    padding-top: 0;    width: 91px !important;}
+*BVF*/#body.avail #group-right .arrow-box {height: 25px;border-left: 1px solid #CCCCCA; width:25px;}
+/*BVF*/#body.avail #group-right #search-box div.locations  {background-color:#F5F6FA; border: 0px}
+/*BVF*/#body.avail #group-right div.input-fld  {background-color:#fff; border: 1px solid #CCCCCA;}
+/*BVF*/#body.avail #group-right div.select-fld   {background-color:#fff; border: 1px solid #CCCCCA;}
+/*BVF*/#body.avail #group-right div.nights-form.select-fld {background-color: #F5F6FA;border: 0 none; margin-bottom: 20px; margin-right: 20px;    width: 140px;}
+/*BVF*/#body.avail #group-right div.nights-form.select-fld label, #body.avail #group-right div.numRooms-form.select-fld label, #body.avail #group-right div.paxhab-form.select-fld label, #body.avail #group-right div.stars-form.select-fld label, #body.avail #group-right div.boardtype-form.select-fld label{padding:0; width:157px;}
+/*BVF*/#body.avail #group-right div.numRooms-form.select-fld {background-color: #F5F6FA;border: 0 none; margin-bottom: 20px; margin-right: 20px;    width: 110px;}
+/*BVF*/#body.avail #group-right div.paxhab-form.select-fld {background-color: #F5F6FA;border: 0 none; margin-bottom: 20px; margin-right: 20px;    width: 110px;}
+/*BVF*/#body.avail #group-right div.stars-form.select-fld {background-color: #F5F6FA;border: 0 none; margin-bottom: 20px; margin-right: 81px;    width: 110px;}
+/*BVF*/#body.avail #group-right div.boardtype-form.select-fld {background-color: #F5F6FA;border: 0 none; margin-bottom: 20px; margin-right: 81px;    width: 110px;}
+/*BVF*/#body.avail #group-right div.nights-form.select-fld .arrow-box{background: url("/pictures/bg-azul.jpg") repeat-x scroll 0 center transparent;  border-left: 1px solid #CCCCCA; cursor: pointer;    float: right;   height: 23px;  padding: 0;  width: 24px; margin-left:5px;}
+/*BVF*/#body.avail #group-right div.numRooms-form.select-fld .arrow-box{background: url("/pictures/bg-azul.jpg") repeat-x scroll 0 center transparent;  border-left: 1px solid #CCCCCA; cursor: pointer;    float: right;   height: 23px;  padding: 0;  width: 24px; margin-left:5px;}
+/*BVF*/#body.avail #group-right div.paxhab-form.select-fld .arrow-box{background: url("/pictures/bg-azul.jpg") repeat-x scroll 0 center transparent;  border-left: 1px solid #CCCCCA; cursor: pointer;    float: right;   height: 23px;  padding: 0;  width: 24px; margin-left:5px;}
+/*BVF*/#body.avail #group-right div.stars-form.select-fld .arrow-box{background: url("/pictures/bg-azul.jpg") repeat-x scroll 0 center transparent;  border-left: 1px solid #CCCCCA; cursor: pointer;    float: right;   height: 23px;  padding: 0;  width: 24px; margin-left:5px;}
+/*BVF*/#body.avail #group-right div.boardtype-form.select-fld .arrow-box{background: url("/pictures/bg-azul.jpg") repeat-x scroll 0 center transparent;  border-left: 1px solid #CCCCCA; cursor: pointer;    float: right;   height: 23px;  padding: 0;  width: 24px; margin-left:5px;}
+/*BVF*/#body.avail #group-right div.select-fld .border-select-nights {background-color: #FFFFFF;border: 1px solid #CCCCCA; float: left; height: 23px; position: relative;  font-size:12px;}
+/*BVF*/#body.avail #group-right div.select-fld .border-select-numRooms {background-color: #FFFFFF;border: 1px solid #CCCCCA; float: left; height: 23px; position: relative;  font-size:12px;}
+/*BVF*/#body.avail #group-right div.select-fld .border-select-paxhab {background-color: #FFFFFF;border: 1px solid #CCCCCA; float: left; height: 23px; position: relative;  font-size:12px;}
+/*BVF*/#body.avail #group-right div.select-fld .border-select-stars {background-color: #FFFFFF;border: 1px solid #CCCCCA; float: left; height: 23px; position: relative;  font-size:12px;}
+/*BVF*/#body.avail #group-right div.select-fld .border-select-boardtype {background-color: #FFFFFF;border: 1px solid #CCCCCA; float: left; height: 23px; position: relative;  font-size:12px;}
+/*BVF*/#body.avail #group-right #search-box .button { margin: 0;}
+/*BVF*/#body.avail #group-right #search-box.lite .button { margin: 0; margin-top:20px;}
+/*BVF SEARCH*/#search-box #aceptar-children input.btn { margin: 20px 10px 0 0; border-radius:5px}
+
+
+/* AUTOCOMPLETAR */
+/*Locations Autocomplete*/
+div.locations-autocomplete-results {border:1px solid #CCCCCC;background-color:#FFF;width:510px;max-height:10em;/*max-height:7em;*/overflow-y:auto;position:absolute;z-index:1000;font-size:12px; cursor:pointer;/*margin-left:-134px; *top:40*/}
+div.locations-autocomplete-results span {display:block}
+div.locations-autocomplete-results li {line-height:1.4em}
+div.locations-autocomplete-results li ul {margin-left:25px;}
+div.locations-autocomplete-results span.content {position:relative;padding-left:25px}
+div.locations-autocomplete-results span.city {background:transparent url(/pictures/sprite-autocomplete-locations.gif) no-repeat scroll 0 -71px}
+div.locations-autocomplete-results span.airport {background:transparent url(/pictures/sprite-autocomplete-locations.gif) no-repeat scroll 0 -71px}
+div.locations-autocomplete-results span.rail {background:transparent url(/pictures/sprite-autocomplete-rail.gif) no-repeat scroll 0 -71px}
+div.locations-autocomplete-results span.bus {background:transparent url(/pictures/sprite-autocomplete-bus.gif) no-repeat scroll 0 -71px}
+div.locations-autocomplete-results span.heliport {background:transparent url(/pictures/sprite-autocomplete-locations.gif) no-repeat scroll 0 -71px}
+div.locations-autocomplete-results span.selected {background-color:#FCF1DC}
+div.locations-autocomplete-results span.country {font-size:0.9em;color:#676767;position:absolute;top:1px;right:3px}
+
+
+/*YUI CALENDAR .yui-calcontainer*/
+
+/**
+ * Rumbo Skin
+ *
+ * Skin colors used:
+ *
+ * - Control Border : 808080
+ * - Control Chrome : f2f2f2
+ * - Cell Borders : cccccc
+ * - Normal Cell BG : ffffff
+ * - Date Links : 0066cc
+ * - Selected Cells BG : b3d4ff
+ * - Cell Hover BG : 426fd9
+ * - Disabled BG : cccccc
+ * - Disabled Text Color : a6a6a6
+ **/
+
+/* CALENDAR BOUNDING BOX */
+/*BVF*/.yui-calcontainer {background-color:#fff;border:1px solid #0063be;padding:4px;z-index:999}
+/* CALENDARGROUP BOUNDING BOX */
+.yui-calcontainer.multi {padding:0 3px 0 3px;}
+/* BOUNDING BOX FOR EACH CALENDAR GROUP PAGE */
+.yui-calcontainer.multi .groupcal {background-color:transparent;border:none;padding:2px;margin:0;}
+/* TITLE BAR */
+/*BVF*/.yui-calcontainer .title {font:100% sans-serif;color:#0063be;font-weight:bold;height:auto;padding:.4em;margin:0 -10px 10px -10px;top:0;left:0;text-align:left;}
+/*BVF*/.yui-calcontainer.multi .title {margin:0 -2px 0 -2px;color: #0063be;}
+/*BVF*/.yui-calcontainer.withtitle {padding-top:0;display:none;width:346px;position:absolute;font-size: 12px;}
+/* CLOSE BUTTON */
+.yui-calcontainer .calclose {background:url(/pictures/cerrar-popup.png) no-repeat 0 0px;width:20px;height:20px;top:.2em;right:.2em;cursor:pointer;margin-top:4px;}
+/* CALENDAR TABLE */
+.yui-calendar {border-spacing:0;border-collapse:collapse;font:100% sans-serif;text-align:center;margin:0;}
+/* NAVBAR BOUNDING BOX */
+.yui-calendar .calhead {background:transparent;border:none;vertical-align:middle;padding:0;}
+/* NAVBAR TEXT CONTAINER */
+/*BVF*/.yui-calendar .calheader {background:transparent;font-weight:bold;padding:2px 0;text-align:center;color:#222222; background-color:#fff}
+.yui-calendar .calheader img {border:none;}
+/* NAVBAR LEFT ARROW */
+/*BVF*/.yui-calendar .calnavleft {background: url("/pictures/sprite-search-icons.png") no-repeat scroll -68px -15px transparent;top:2;bottom:0;left:0;margin-left:.4em;cursor:pointer;height: 18px;width:18px}
+/* NAVBAR RIGHT ARROW */
+.yui-calendar .calnavright { background: url("/pictures/sprite-search-icons.png") no-repeat scroll -87px -15px transparent;bottom: 0;cursor: pointer;height: 18px;margin-right: 0.4em;right: 0;width: 18px;}
+/* WEEKDAY HEADER ROW */
+/*BVF*/.yui-calendar .calweekdayrow {height:2em;background-color:#fff}
+.yui-calendar .calweekdayrow th {padding:0;border:none;}
+/* WEEKDAY (Su, Mo, Tu...) HEADER CELLS */
+.yui-calendar .calweekdaycell {color:#424242;font-weight:bold;text-align:center;width:2em;}
+/* CALENDAR FOOTER. NOT IMPLEMENTED BY DEFAULT */
+.yui-calendar .calfoot {background-color:#f2f2f2;}
+/* WEEK NUMBERS (ROW HEADERS/FOOTERS) */
+.yui-calendar .calrowhead, .yui-calendar .calrowfoot {color:#a6a6a6;font-size:85%;font-style:normal;font-weight:normal;border:none;}
+.yui-calendar .calrowhead {text-align:right;padding:0 2px 0 0;}
+.yui-calendar .calrowfoot {text-align:left;padding:0 0 0 2px;}
+/* NORMAL CELLS */
+.yui-calendar td.calcell {/*border:1px solid #cccccc;*/background:#FFF;padding:1px;height:1.6em;line-height:1.6em; /* set line height equal to cell height to center vertically */text-align:center;white-space:nowrap; font-weight:bold; }
+/* LINK INSIDE NORMAL CELLS */
+/*BVF*/.yui-calendar td.calcell a {color:#336699;display:block;height:100%;text-decoration:none !important; border:1px solid #0063be; font-weight:bold; border-radius:5px;}
+/* TODAY'S DATE */
+.yui-calendar td.calcell.today {background-color:#2F7375; color:#2F7375}
+.yui-calendar td.calcell.today a {background-color:#fff; color:#2F7375}
+.yui-calendar td.calcell.highlight1 a {text-decoration:underline;}
+/* OOM DATES */
+/*BVF*/.yui-calendar td.calcell.oom {background-color:#fff;color:#C4C4C4;cursor:default;}
+/* SELECTED DATE */
+.yui-calendar td.calcell.selected {background-color:#fff;color:#333;}
+.yui-calendar td.calcell.selected a {background-color:#0063be;color:#FFF !important;}
+/* HOVER DATE */
+.yui-calendar td.calcell.calcellhover {background-color:#BDCFD1;color:#2F7375;cursor:pointer;}
+/*BVF*/.yui-calendar td.calcell.calcellhover a {background-color:#fff;color:#2F7375; border-radius:5px;}
+/* DEFAULT OOB DATES */
+.yui-calendar td.calcell.previous {color:#828282;background-color:#FFF; border: 1px solid #CCCCCA;}
+/* CUSTOM RENDERERS */
+.yui-calendar td.calcell.restricted {text-decoration:line-through;}
+.yui-calendar td.calcell.highlight2 {background-color:#99ccff;}
+.yui-calendar td.calcell.highlight3 {background-color:#ffcccc;}
+.yui-calendar td.calcell.highlight4 {background-color:#ccff99;}
+/* CalendarNavigator */
+/* MONTH/YEAR LABEL */
+.yui-calendar a.calnav {border: 1px solid #f2f2f2;padding:0 4px;text-decoration:none;color:#333;zoom:1;}
+.yui-calendar a.calnav:hover {border-color:#A0A0A0;cursor:pointer;}
+/* NAVIGATOR MASK */
+.yui-calcontainer .yui-cal-nav-mask {background-color:#000;opacity:0.25;*filter:alpha(opacity=25); /* IE */}
+/* NAVIGATOR BOUNDING BOX */
+.yui-calcontainer .yui-cal-nav {font-family:arial,helvetica,clean,sans-serif;font-size:93%;border:1px solid #808080;left:50%;margin-left:-7em;width:14em;padding:0;top:2.5em;background-color:#f2f2f2;}
+.yui-calcontainer.withtitle .yui-cal-nav {top:4.5em;}
+/* NAVIGATOR BOUNDING BOX */
+.yui-calcontainer.multi .yui-cal-nav {width:16em;margin-left:-8em;}
+/* NAVIGATOR YEAR/MONTH/BUTTON/ERROR BOUNDING BLOCKS */
+.yui-calcontainer .yui-cal-nav-y, .yui-calcontainer .yui-cal-nav-m, .yui-calcontainer .yui-cal-nav-b {padding:5px 10px 5px 10px;}
+.yui-calcontainer .yui-cal-nav-b {text-align:center;}
+.yui-calcontainer .yui-cal-nav-e {margin-top:5px;padding:5px;background-color:#EDF5FF;border-top:1px solid black;display:none;}
+/* NAVIGATOR LABELS */
+.yui-calcontainer .yui-cal-nav label {display:block;font-weight:bold;}
+/* NAVIGATOR MONTH CONTROL */
+.yui-calcontainer .yui-cal-nav-mc {width:100%;_width:auto; /* IE6, IE7 Quirks don't handle 100% well */}
+/* NAVIGATOR MONTH CONTROL, VALIDATION ERROR */
+.yui-calcontainer .yui-cal-nav-y input.yui-invalid {background-color:#FFEE69;border: 1px solid #000;}
+/* NAVIGATOR YEAR CONTROL */
+.yui-calcontainer .yui-cal-nav-yc {width:4em;}
+/* NAVIGATOR BUTTONS */
+/* BUTTON WRAPPER */
+.yui-calcontainer .yui-cal-nav .yui-cal-nav-btn {background-color:#ccc;margin: auto .15em;}
+/* BUTTON (based on button-skin.css) */
+.yui-calcontainer .yui-cal-nav .yui-cal-nav-btn button {padding:0 8px;font-size:93%;line-height: 2;  /* ~24px */*line-height: 1.7; /* For IE */min-height: 2em; /* For Gecko */*min-height: auto; /* For IE */color: #333;}
+/* DEFAULT BUTTONS */
+/* NOTE: IE6 will only pickup the yui-default specifier from the multiple class specifier */
+.yui-calcontainer .yui-cal-nav .yui-cal-nav-btn.yui-default {border:1px solid #304369;background-color: #426fd9;}
+.yui-calcontainer .yui-cal-nav .yui-cal-nav-btn.yui-default button {color:#fff;}
+
+/**
+ * CORE
+ *
+ * This is the set of CSS rules required by Calendar to drive core functionality and structure.
+ * Changes to these rules may result in the Calendar not functioning or rendering correctly.
+ *
+ * They should not be modified for skinning.
+ **/
+ 
+/* CALENDAR BOUNDING BOX */
+.yui-calcontainer {position:absolute;float:left;_overflow:hidden; /* IE6 only, to clip iframe shim */}
+/* IFRAME SHIM */
+.yui-calcontainer iframe {position:absolute;border:none;margin:0;padding:0;z-index:0;width:100%;height:100%;left:0px;top:0px;}
+/* IFRAME SHIM IE6 only */
+.yui-calcontainer iframe.fixedsize {width:50em;height:50em;top:-1px;left:-1px;}
+/* BOUNDING BOX FOR EACH CALENDAR GROUP PAGE */
+.yui-calcontainer.multi .groupcal {z-index:1;float:left;position:relative;}
+/* TITLE BAR */
+.yui-calcontainer .title {position:relative;z-index:1;}
+/* CLOSE ICON CONTAINER */
+.yui-calcontainer .close-icon {position:absolute;z-index:1;overflow:hidden;text-indent:-10000em;}
+/* CALENDAR TABLE */
+.yui-calendar {position:relative;}
+/* NAVBAR LEFT ARROW CONTAINER */
+.yui-calendar .calnavleft {position:absolute;z-index:1;overflow:hidden;text-indent:-10000em;}
+/* NAVBAR RIGHT ARROW CONTAINER */
+.yui-calendar .calnavright {position:absolute;z-index:1;overflow:hidden;text-indent:-10000em;}
+/* NAVBAR TEXT CONTAINER */
+.yui-calendar .calheader {position:relative;width:100%;text-align:center;}
+/* CalendarNavigator */
+.yui-calcontainer .yui-cal-nav-mask {position:absolute;z-index:2;margin:0;padding:0;width:100%;height:100%;_width:0;/* IE6, IE7 quirks - width/height set programmatically to match container */_height:0;left:0;top:0;display:none;}
+/* NAVIGATOR BOUNDING BOX */
+.yui-calcontainer .yui-cal-nav {position:absolute;z-index:3;top:0;display:none;}
+/* NAVIGATOR BUTTONS (based on button-core.css) */
+.yui-calcontainer .yui-cal-nav .yui-cal-nav-btn  {display: -moz-inline-box;/* Gecko */display: inline-block;/* IE, Opera and Safari */}
+.yui-calcontainer .yui-cal-nav .yui-cal-nav-btn button {display: block;*display: inline-block; /* IE */*overflow: visible; /* Remove superfluous padding for IE */border: none;background-color: transparent;cursor: pointer;}
+/* Specific changes for calendar running under fonts/reset */
+.yui-calendar .calbody a:hover {background:inherit;}
+p#clear {clear:left; padding-top:10px;}
+
+
+/*imagenes tematicas*/
+div.locations-autocomplete-results span.content.h-loc-urbano{background-image:url(/pictures/iconos-buscador-urbano.gif);background-repeat:no-repeat;background-position:left top;}
+div.locations-autocomplete-results span.content.h-reg-cultural{background-image:url(/pictures/iconos-buscador-cultura.gif);background-repeat:no-repeat;background-position:left top;}
+div.locations-autocomplete-results span.content.h-loc-esqui, div.locations-autocomplete-results span.content.h-rec-esqui{background-image:url(/pictures/iconos-buscador-esqui.gif);background-repeat:no-repeat;background-position:left top;}
+div.locations-autocomplete-results span.content.h-reg-gastronomica{background-image:url(/pictures/iconos-buscador-gastronomico.gif);background-repeat:no-repeat;background-position:left top;}
+div.locations-autocomplete-results span.content.h-reg-playa, div.locations-autocomplete-results span.content.h-loc-costa, div.locations-autocomplete-results span.content.h-loc-islas{background-image:url(/pictures/iconos-buscador-playa.gif);background-repeat:no-repeat;background-position:left top;}
+/*imagenes tematicas*/
+
+/* Ayuda de Destinos */
+
+#body #search-box .popup-ayuda-destinos .ayuda-destino {font-family:Verdana, Geneva, sans-serif; font-size:10px; }
+#body #search-box .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino {width:614; padding: 5px 5px 5px 5px; background-color:#FFF}
+#body #search-box .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino {width:604px;}
+#body #search-box .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino .titulo {width:603; height:32px; font-size:14px; background-image:url(/pictures/cabecera-ayuda-destino.jpg); color:#FFF; font-weight:100;background-repeat:no-repeat; }
+#body #search-box .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino .titulo h1 {font-size: 14px;float:left; margin:7px 0 0 8px !important; font-weight:100;background:none;color:#FFF}
+#body #search-box .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino .cerrar {font-size: 14px; float:right; margin:7px 15px 0px 0px !important;}
+#body #search-box .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino .cerrar #enlace-cerrar {float: left;font-size: 11px;margin-right: 5px;color: #FFF;text-decoration:underline;}
+#body #search-box .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino .volver-atras {font-size: 14px; float:right; margin:7px 15px 0px 0px !important;}
+#body #search-box .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino .volver{font-size: 14px; float:right; margin:0px 15px 10px 0 !important;}
+#body #search-box .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino .contenido {width:603; padding: 2px 0 2px 0; background-image:url(/pictures/medio-ayuda-destino.jpg);background-repeat: repeat-y;}
+#body #search-box .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino .contenido p {color:#2F7375; margin-left:32px;*zoom:1;}
+#body #search-box .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino .contenido h2 {color:#333; margin:10px 20px; font-size:12px; font-weight:700;width:auto;height:auto;position:inherit !important;*zoom:1;}
+#body #search-box h2{position:inherit}
+#body #search-box .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino .pie {height:20px; background-image:url(/pictures/pie-ayuda-destino.jpg); background-repeat:no-repeat;}
+#body #search-box .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino .lista {width:600px;}
+#body #search-box .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino .lista ul {width:600px; float:left;}
+#body #search-box .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino .lista li {width:270px; float:left; margin: 2px 0px 2px 30px; font-size:11px; list-style-type:none;;}
+#body #search-box .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino a, #body #search-box .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino a:link, #body #search-box .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino a:visited  {color:#2F7375; text-decoration:underline; }
+#body #search-box .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino a:hover {color:#424242}
+#body #search-box .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .separador {height:8px;}
+#body #search-box .popup-ayuda-destinos .ayuda-destino .clearer {line-height:0px; clear:both;}
+#body #search-box #search-box-flight fieldset.locations-info #location-dep { width: 150px;}
+#body #search-box #search-box-flight fieldset.locations-info #location-arr { width: 150px;}
+#body #search-box #search-box-flight fieldset.locations-info .logoayudadestinos  {z-index: 1; zoom: 1; position: relative; margin: 0pt 15px 0pt 0pt;  }
+#body #search-box #search-box-flight fieldset.locations-info .logoayudadestinos input {padding: 6px; width: 136px; }
+#body #search-box span.loadicon-link{cursor: pointer;left: auto;position: absolute;right: -15px;top: 5px;z-index: 2}
+#body #search-box{position:relative;}
+
+#body #search-box-flight span.ayudadescon-link{ cursor: pointer;left: auto;position: absolute;z-index:1; margin:4px 0 0 -28px;}
+#body.flight .list-airports-content{overflow:auto; overflow-x:hidden; width:auto;}
+#body.flight .list-airports-content{overflow:auto; overflow-x:hidden; width:auto;}
+
+#body.flight #search-box .arrival {top:107px; left: 220px;}
+#body.flight #search-box .departure {top:107px; left: 13px;}
+
+#body #search-box .popup-ayuda-destinos .list-airports-mask {top: 105px; left: 380px; height: 370px; overflow-x: hidden;}
+#body .popup-ayuda-destinos {background-color:#fff;-moz-border-radius:8px;border-radius:8px;position:absolute;padding:8px;z-index:11; border: solid 1px #0000FF; width:633px;}
+
+/*ESTILOS NUEVOS BUSCADORES LITE*/
+
+#body #primary-main #search-box.lite.air div.header-search {color: #FFF;*+height:24px;_height:24px;width:775px}
+#body #search-box.lite.air{position:relative;overflow:visible !important;_z-index:10;*+z-index:10}
+#body #search-box.lite.air #popup-ayuda-destinos{left:0}
+#body #primary-main #search-box.lite.air form{min-height:60px !important;width:774px !important;float:left !important;padding:0 0 5px 0;*padding:0 0 10px 0;}
+/* campo seleccionado */
+#body #search-box.lite.air input.selected, #body #search-box.lite.air div.selected{border-color:#2F7375}
+/* destinos i/v */
+#body #search-box.lite.air fieldset.locations{width:auto;margin:0 0 0 10px !important;padding:10px 0 0;*+padding-left:10px}
+#body #search-box.lite.air fieldset.locations .logoayudadestinos-home{margin:0;position:relative}
+#body #search-box.lite.air fieldset.locations .logoayudadestinos-home input{padding:6px;width:136px}
+#body #search-box.lite.air input.highlight, #body #search-box.lite.air select.highlight{border:1px solid #999;font-size:1em}
+#body #search-box.lite.air span.ayudadescon-link{cursor:pointer;left:auto;position:absolute;z-index:1}
+#body #search-box.lite.air .locations #location-dep input, #body #search-box.lite.air .locations #location-arr input {width:176px;margin-right:-2px} 
+#body #search-box.lite.air span.ayudadescon-link{cursor:pointer;left:auto;margin:5px 18px 0 0;position:absolute;z-index:1}
+#body #search-box.lite.air .locations #calendar-dep input, #body #search-box.lite.air .locations #calendar-ret input{width:80px;margin:0;padding:4px; border:none;}
+#body #search-box.lite.air .locations label {display: block; float: left;padding-top: 4px; font-weight:bold;}
+#body #search-box.lite.air .locations #calendar-dep.date-box {border: 1px solid #999999;float: left;padding: 2px 5px;position: relative;width: 135px; margin-right:15px;}
+#body #search-box.lite.air .locations.v-en #calendar-dep.date-box {border: 1px solid #999999;float: left;padding: 2px 5px;position: relative;width: 155px; margin-right:15px;}
+#body #search-box.lite.air .locations #calendar-dep.date-box span.calicon-link {cursor: pointer;left: auto;position: absolute;right: 5px !important;top: 5px;z-index: 1;}
+#body #search-box.lite.air .locations #calendar-ret.date-box {border: 1px solid #999999;float: left;padding: 2px 5px;position: relative;width: 150px;}
+#body #search-box.lite.air .locations.v-en #calendar-ret.date-box {border: 1px solid #999999;float: left;padding: 2px 5px;position: relative;width: 155px;}
+#body #search-box.lite.air .locations #calendar-ret.date-box span.calicon-link {cursor: pointer;left: auto;position: absolute;right: 5px !important;top: 5px;z-index: 1;}
+/* más opciones */
+#body #search-box.lite.air fieldset.more-options{margin:10px 0 0 10px !important; padding:0 0 5px 0; float:left; width:750px;}
+#body #search-box.lite.air fieldset.more-options legend {color: #2F7375;cursor: pointer;font-size: 12px;margin-left: 4px !important;padding-left: 12px;text-decoration: underline;}
+#body #search-box.lite.air .query-type{margin-left:10px !important;margin-right:10px !important;_float:left !important;*+float:left !important;*width:700px !important;}
+#body #search-box.lite.air fieldset.more-options label, #body #search-box.lite.air fieldset.more-options input, #body #search-box.lite.air fieldset.more-options option{font-weight:normal;color:#333;float:left;margin:4px 5px;padding:0;font-size:11px} 
+#body #search-box.lite.air fieldset.more-options select{margin:0;font-size:10px}
+#body #search-box.lite.air fieldset.more-options.max fieldset{margin:0 0 0 5px}
+#body #search-box.lite.air label.title{float:left;font-weight:bold;padding-top:4px;color:#333}
+#body #search-box.lite.air fieldset.pax-quantities{margin:7px 0 0 5px;*width:700px !important;margin-left:15px !important;margin-top:5px !important;float:left !important;}
+#body #search-box.lite.air fieldset.pax-quantities select{float:right;font-size:10px;height:20px;padding:3px 0}
+#body #search-box.lite.air fieldset.pax-quantities .pax{border:1px solid #999;*border:none;float:left;height:20px;margin-right:18px;padding:2px 5px;width:100px;font-size:10px}
+#body #search-box.lite.air fieldset.pax-quantities .pax.children{width:135px}
+#body #search-box.lite.air fieldset.pax-quantities .pax.bebes{width:88px;margin-right:15px}
+#body #search-box.lite.air fieldset.pax-quantities .pax.clase{width:130px}
+#body #search-box.lite.air fieldset.pax-quantities input.highlight, #body #search-box.lite.air fieldset.pax-quantities select.highlight{border:none;*border:1px solid #FFF;padding:2px 0 0;height:17px}
+#body #search-box.lite.air fieldset.pax-quantities .class{border:1px solid #999;*border:none;height:20px;margin:0;padding:2px 5px;width:120px;background:#FFF}
+#body #search-box.lite.air div.w100px{width:120px}
+/* descuentos */
+#body #search-box.lite.air fieldset.discount {margin:0 5px 0 !important; padding:0 !important;float:left !important; *width:740px}
+#body #search-box.lite.air fieldset.discount #discounts #largeFamily-disc {float:left;width:320px !important;_width:304px !important; height:70px; border:#999999 solid 1px; background-color:#FFF;padding:10px;margin:5px 20px 5px 0}
+#body #search-box.lite.air fieldset.discount #discounts #largeFamily-disc ul, #body #search-box.lite.air fieldset.discount #discounts #resident-disc ul {padding:0;margin:15px 0 0 0}
+#body #search-box.lite.air fieldset.discount #discounts #largeFamily-disc li, #body #search-box.lite.air fieldset.discount #discounts #resident-disc li {margin: 0;padding-right:15px;display:inline; font-size:10px; font-weight:normal;color:#333}
+#body #search-box.lite.air fieldset.discount #discounts #largeFamily-disc label,#body #search-box.lite.air fieldset.discount #discounts #resident-disc label {color:##019AA2;font-weight:bold; width:200px}
+#body #search-box.lite.air fieldset.discount #discounts #largeFamily-disc .checkbox, #body #search-box.lite.air fieldset.discount #discounts #resident-disc .checkbox {margin:1px 5px 1px 0;padding-right:5px}
+#body #search-box.lite.air fieldset.discount #discounts #resident-disc {float:left;width:330px !important;_width:304px !important; height:80px; border:#999999 solid 1px !important; background-color:#FFF; padding-top:10px !important;padding-left:10px;margin:5px 0 5px 0; overflow:visible !important;}
+#body #search-box.lite.air form {margin-bottom: 10px;min-height: 0 !important;}
+#body #primary-main #search-box.lite.air #discounts { margin: 5px 15px 10px !important; _width:auto !important;}
+#body #primary-main #search-box.lite.air #discounts.discount { background:none; border:none;}
+
+/* Ayuda destinos lite */
+#body #search-box.lite.air .popup-ayuda-destinos.departure {margin:36px 0 0 10px}
+#body #search-box.lite.air .popup-ayuda-destinos.arrival {margin: 37px 0 0 258px}
+/* Ayuda destinos*/
+#body #search-box.lite.air .popup-ayuda-destinos .ayuda-destino, #body #search-box.lite.air-flight .popup-ayuda-destinos .ayuda-destino {font-family:Verdana, Geneva, sans-serif; font-size:10px; }
+#body #search-box.lite.air .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino {width:614; padding: 5px 5px 5px 5px; background-color:#FFF}
+#body #search-box.lite.air .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino {width:604px;}
+#body #search-box.lite.air .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino .titulo {width:583; height:32px; font-size:14px; background-image:url(/pictures/cabecera-ayuda-destino.jpg); color:#FFF; font-weight:100;background-repeat:no-repeat; }
+#body #search-box.lite.air .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino .titulo h1 {font-size: 14px;float:left; margin:7px 0 0 0 !important; font-weight:100;}
+#body #search-box.lite.air .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino .cerrar {font-size: 14px; float:right; margin:7px 15px 0px 0px !important;}
+#body #search-box.lite.air .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino .cerrar #enlace-cerrar {float: left;font-size: 11px;margin-right: 5px;color: #FFF;text-decoration:underline}
+#body #search-box.lite.air .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino .volver-atras {font-size: 14px; float:right; margin:7px 15px 0px 0px !important;}
+#body #search-box.lite.air .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino .volver{font-size: 14px; float:right; margin:0px 15px 10px 0 !important;}
+#body #search-box.lite.air .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino .contenido {width:595; padding: 2px 0 2px 0; background-image:url(/pictures/medio-ayuda-destino.jpg);background-repeat: repeat-y;}
+#body #search-box.lite.air .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino .contenido p {color:#2F7375; margin: 0 0 0 30px !important;}
+#body #search-box.lite.air .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino .contenido h2 {color:#333; margin-left:20px; font-size:12px; font-weight:700;}
+#body #search-box.lite.air .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino .pie {height:20px; background-image:url(/pictures/pie-ayuda-destino.jpg); background-repeat:no-repeat;}
+#body #search-box.lite.air .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino .lista {width:600px;}
+#body #search-box.lite.air .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino .lista ul {width:600px; float:left;}
+#body #search-box.lite.air .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .contenido-ayuda-destino .lista li {width:270px; float:left; margin: 2px 0px 2px 30px; font-size:11px; list-style-type:none;;}
+#body #search-box.lite.air .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino a, a:link, a:visited  {color: #0063be; text-decoration: underline;}
+#body #search-box.lite.air .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino a:hover {color:#424242}
+#body #search-box.lite.air .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino .separador {height:8px;}
+#body #search-box.lite.air .popup-ayuda-destinos .ayuda-destino .clearer {line-height:0px; clear:both;}
+#body #search-box.lite.air #search-box.lite.air-flight fieldset.locations-info #location-dep { width: 150px;}
+#body #search-box.lite.air #search-box.lite.air-flight fieldset.locations-info #location-arr { width: 150px;}
+#body #search-box.lite.air #search-box.lite.air-flight fieldset.locations-info .logoayudadestinos  {zoom: 1; position: relative; margin: 0pt 15px 0pt 0pt; z-index:1 }
+#body #search-box.lite.air #search-box.lite.air-flight fieldset.locations-info .logoayudadestinos input {padding: 6px; width: 136px; }
+#body #search-box.lite.air #search-box.lite.air-flight fieldset.locations-info .logoayudadestinos-home  {zoom: 1; position: relative; margin: 0 15px -21px 0;z-index:1  }
+#body #search-box.lite.air #search-box.lite.air-flight fieldset.locations-info .logoayudadestinos-home input {padding: 6px; width: 136px; }
+#body #search-box.lite.air span.loadicon-link{cursor: pointer;left: auto;position: absolute;right: -15px;top: 5px;z-index: 2}
+#body #search-box.lite.air span.ayudadescon-link{ cursor: pointer;left: auto;position: absolute;z-index: 1;}
+#body .list-airports-content{ height: 450px; overflow:auto; overflow-x:hidden; width:auto;z-index:11}
+#body #search-box.lite.air .popup-ayuda-destinos .list-airports-mask {top: 105px; left: 380px; height: 370px; overflow-x: hidden;}
+/*BVF****/#body #search-box .select-arrow {background-image: url("/pictures/arrow-bottom_BVF.gif"); background-position: 0 8px; background-repeat: no-repeat; height: 7px; margin: 1px 4px 0 6px; padding: 8px 0 0;   width: 12px;}
+/*FIN ESTILOS NUEVOS BUSCADORES LITE*/
+#more-options .border-select-stars .dijitSelect {margin: 4px 0 0 5px !important;}
+
+
+/*Estilos buscador SEO */
+
+/*--ALEMAN---*/
+/*caja contenedora*/
+#content div.de { border-collapse: collapse;float: left;font-family: Verdana,Arial,Helvetica,sans-serif;font-size: 10px;font-weight: normal;margin: 7px 0 0;}
+#content  div.de  form#HotelSearchForm{background-color: #fff;float: left;height: 316px;margin:0;width: 315px;}
+#content  div.de  form#HotelSearchForm .search-box-sup {background-color: #0063be; border-radius: 5px 5px 0 0; color: #FFFFFF; font-weight: bold; height: 21px; padding: 7px 9px 10px; width: 292px;}
+#content  div.de  form#HotelSearchForm .search-box-sup div.titulo {float: left;margin: 0;width: 287px;height: 26px;}
+#content  div.de  form#HotelSearchForm .search-box-sup div.titulo h1 { color: #FFFFFF; font-size: 20px; margin: 0;  padding: 0;}
+#content  div.de  form#HotelSearchForm .search-box-sup div.borde-derc {background: url("/pictures/sprite-searchbox.png") no-repeat scroll -211px -2px transparent;float: right;height: 26px;margin: 0;width: 19px;}
+#content  div.de  form#HotelSearchForm .search-box-inf {background: url("/pictures/sprite-searchbox.png") no-repeat scroll -320px -65px transparent;float: left;height: 17px;margin: 0;width: 315px;}
+/*errores*/
+#content  div.de  form#HotelSearchForm div#error {background-color: #FFEEEE; border: 1px solid #CC0000;color: #CC0000;float: left;font-size: 9px;margin: 9px 0 0 4px;min-height: 10px;padding: 0;position: absolute;width: 305px;z-index: 1;}
+#content  div.de  form#HotelSearchForm div#error ul li {list-style-type: none;margin: 0;padding: 0;width: 294px;}
+/*modulo destino*/
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel{background-color: #F5F6FA; border: 1px solid #DDDDDD; border-radius: 5px 5px 5px 5px; font-family: Arial,Helvetica,sans-serif; font-size: 12px; margin-bottom: 10px; min-height: 124px; padding: 1px; width: 310px;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-destino{border: medium none;float: left; height: 33px; margin: 0 0 0 10px; padding: 0 ; width: 310px;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-destino #label-destino { float: left;height: 33px;margin: 0;width: 310px; display:block;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-destino #label-destino span#txt-destino{color: #000000;float: left;font-size: 12px;font-weight:  bold;margin: 7px 5px 0 0;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-destino #label-destino input.highlight{border: 1px solid #999999;float: left;font-size: 12px;height: 23px;*height: 14px;margin: 0;padding: 0 0 0 5px;width: 150px; float:left; clear:both;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-destino #label-destino input.selected{border: 1px solid #999999;float: left;font-size: 12px;height: 23px;*height: 14px;margin: 0;padding: 0 0 0 5px;width: 150px; float:left; clear:both;}
+/*modulo llegadas-noches*/
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-llegadas-noches{float: left;height: 47px;margin: 25px 0 0 10px;padding: 0;width: 300px;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-llegadas-noches #colizda-llegadas { float: left;height: 47px;margin: 0;width:150px;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-llegadas-noches #colizda-llegadas #calendar-dep{float: left;height: 47px;margin: 0;width: 150px;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-llegadas-noches #colizda-llegadas #label-llegadas{display: block;float: left;margin: 0 0 2px;padding: 0;width: 150px;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-llegadas-noches #colizda-llegadas #txt-llegadas{float: left;font-size: 12px;font-weight: bold; height: 15px;margin: 0;width: 150px;text-align: left;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-llegadas-noches #colizda-llegadas #showCalDep{float: left;height: 25px;margin: 0;width: 150px;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-llegadas-noches #colizda-llegadas  input#depDate {border: 1px solid #999999;float: left;font-size: 12px;height: 25px;margin: 0;width: 125px;padding: 0 0 0 4px;}	
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-llegadas-noches #colizda-llegadas  span#showCalDep{background: url("/pictures/sprite-searchbox.png") no-repeat scroll -23px 0 transparent;cursor: pointer;float: right;height: 20px;margin: -24px 26px 0 0;position: relative; width: 20px; z-index: 1;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-llegadas-noches #coldcha-noches{float: left;height: 47px;margin: 0;width:150px;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-llegadas-noches #coldcha-noches #label-noches{display: block;float: left;margin: 0 0 2px;padding: 0;width: 150px;}	
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-llegadas-noches #coldcha-noches #txt-noches{float: left;font-size: 12px;font-weight: bold; height: 15px;margin: 0;width: 150px;text-align: left;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-llegadas-noches #coldcha-noches select.highlight{border: 1px solid #999999;float: left;font-size: 12px;height: 25px;padding: 4;width: 45px;}
+/*modulo salidas*/
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-salidas{float: left;height: 47px;margin: 10px 0 0 10px;padding: 0;width: 300px;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-salidas #colizda-salidas{float: left;height: 47px;margin: 0;width:150px;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-salidas #colizda-salidas #calendar-ret{float: left;height: 47px;margin: 0;width: 150px;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-salidas #colizda-salidas #label-salidas{display: block;float: left;margin: 0 0 2px;padding: 0;width: 150px;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-salidas #colizda-salidas #txt-salidas{float: left;font-size: 12px;font-weight: bold; height: 15px;margin: 0;width: 150px;text-align: left;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-salidas #colizda-salidas #showCalRet{float: left;height: 25px;margin: 0;width: 150px;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-salidas #colizda-salidas  input#retDate {border: 1px solid #999999;float: left;font-size: 12px;height: 25px;margin: 0; width: 125px;padding: 0 0 0 4px;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-salidas #colizda-salidas span#showCalRet{background: url("/pictures/sprite-searchbox.png") no-repeat scroll -23px 0 transparent;cursor: pointer; float: right;height: 20px; margin: -24px 26px 0 0;position: relative; width: 20px;z-index: 1;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-salidas #colizda-salidas select.highlight{border: 1px solid #999999;float: left;font-size: 10px;height: 25px;padding: 4;width: 125px;}
+/*modulo habitaciones-personas*/
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-habitaciones-personas{float: left;height: 47px;margin: 10px 0 0 10px;padding: 0;width: 300px;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-habitaciones-personas #colizda-habitaciones{ float: left;height: 47px;margin: 0;width:150px;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-habitaciones-personas #colizda-habitaciones #label-habitaciones{display: block;float: left;margin: 0 0 2px;padding: 0;width: 150px;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-habitaciones-personas #colizda-habitaciones #txt-habitaciones{float: left;font-size: 12px;font-weight: bold; height: 15px;margin:0; width: 150px;text-align: left;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-habitaciones-personas #colizda-habitaciones select.highlight{border: 1px solid #999999;float: left;font-size: 12px;height: 25px;padding: 4;width: 45px;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-habitaciones-personas #coldcha-personas{float: left;height: 47px;margin: 0;width:150px;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-habitaciones-personas #coldcha-personas #label-personas{display: block;float: left;margin: 0 0 2px;padding: 0;width: 150px;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-habitaciones-personas #coldcha-personas #txt-personas{float: left;font-size: 12px;font-weight: bold; height: 15px;margin: 0;width: 150px;text-align: left;}
+#content  div.de  form#HotelSearchForm #search-box.search-seo-hotel fieldset#FILA-habitaciones-personas #coldcha-personas select.highlight{border: 1px solid #999999;float: left;font-size: 12px;height: 25px;padding: 4;width: 137px;}
+/*modulo edades*/
+#content  div.de  form#HotelSearchForm div#agesForm.oculto {text-align:left;border: 1px solid #CCCCCC;left: 290px;position: absolute;top: 160px;width: 235px;z-index: 1;background-color:#FFF;border:1px solid #CCCCCC;position:absolute;z-index:20;}
+#content  div.de  form#HotelSearchForm div#agesForm.oculto #agesError {background-color: #FFEEEE;border: 1px solid #CC0000;color: #CC0000;margin: 0;padding: 10px;position:static;}
+#content  div.de  form#HotelSearchForm div#agesForm.oculto div.title {background-color:#008DD6;height:22px;width: 235px;}
+#content  div.de  form#HotelSearchForm div#agesForm.oculto div.title img {float: right;height: 14px;margin: -15px 2px 0 0;width: 15px;}
+#content  div.de  form#HotelSearchForm div#agesForm.oculto div.title span{ color:#000000;margin-left:10px}
+#content  div.de  form#HotelSearchForm div#agesForm.oculto p {color: #FFFFFF;float: left;font-size: 10px;font-weight: bold;margin: 0 0 0 10px;padding: 4px;width: 235px;}
+#content  div.de  form#HotelSearchForm div#agesForm.oculto div.room_age{float: left;margin: 10px 0;width:235px;}
+#content  div.de  form#HotelSearchForm div#agesForm.oculto div.room_age span{float: left;font-weight: bold;margin: 0 0 5px 10px;width:225px;}
+#content  div.de  form#HotelSearchForm div#agesForm.oculto div.room_age fieldset{border: 0 none;float: left;margin: 0;padding: 0;width:225px;}
+#content  div.de  form#HotelSearchForm div#agesForm.oculto div.room_age fieldset div.select-child{float: left;margin: 0 0 5px 10px;width:225px;}
+#content  div.de  form#HotelSearchForm div#agesForm.oculto div.room_age fieldset div.select-child input{font-size: 9px;padding: 1px 0;width: 35px;}
+/*boton buscar-aceptar*/
+#content  div.de  form#HotelSearchForm #btn-buscarDE{ float: right;height: 40px;margin:0;width: 94px;}
+#content  div.de  form#HotelSearchForm div#agesForm.oculto #btn-aceptarDE{float: right;margin: 12px 12px 12px 0;_margin-right:0;*margin-right:7px;}
+#content  div.de  form#HotelSearchForm #btn-buscarDE input.btn, 
+#content  div.de  form#HotelSearchForm div#agesForm.oculto #btn-aceptarDE input.btn{ background-image: url("/pictures/background_price.jpg"); border: 0 none; border-radius: 5px 5px 5px 5px; color: #FFFFFF;  cursor: pointer;  font-size: 13px; font-weight: bold; height: 25px;  margin-top: 10px;  padding: 0 10px 2px;  text-transform: uppercase;}
+#content  div.de  form#HotelSearchForm #btn-buscarDE input.btn:hover, 
+#content  div.de  form#HotelSearchForm div#agesForm.oculto #btn-aceptarDE input.btn:hover{background:url("/pictures/background_price_hover.jpg");}
+/*FIN ALEMAN----------------------------------------*/
+/*FIN SEARCH BOX SEO HOTEL---------------------------------*/
+/*-----------------------------------------------FIN HOTELES---------------------------------------*/

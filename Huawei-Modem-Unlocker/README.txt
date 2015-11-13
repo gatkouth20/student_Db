@@ -1,0 +1,1 @@
+For more info on how to use this, visit http://www.doncaprio.com/2012/11/how-to-flash-huawei-usb-modems-and-re-install-the-firmware.html

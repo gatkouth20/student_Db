@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* // Skeleton // */
+#wrap-homes {width: 100%;background: none repeat scroll 0 0;margin: 0 auto 0;font-family: Arial,Helvetica,sans-serif;font-size: 12px;}
+#wrap-homes a, #wrap-homes a:link, #wrap-homes a:visited {text-decoration:  none;}
+#wrap-homes .float-left {float:left;}
+#wrap-homes .float-right {float:right;} 
+#wrap-homes .width-100 {width: 100%;}
+
+
+#body.hotel {}
+#body.hotel #header.fr { min-height: 100px;}
+#body.hotel #container {position: relative;width: 980px;padding: 0;margin: 0 auto;}
+#body.hotel #container:after {clear: both;content: " ";display: block;height: 0;}
+#body.hotel #container #main {float: left;width: 670px;display: inline;margin-right: 10px;}
+#body.hotel #container #sidebar{float: left;width: 300px;display: inline;}
+#body.hotel #container #bottom {float: left;width: 970px;display: inline;margin: 0;}
+#body.hotel #footer {width: 980px;margin: 0 auto 50px;background: none repeat scroll 0 0 #FFFFFF;}
+
+/* // Boxed //*//*/ Main /*/
+#container #main #search-box.hotel {}
+
+/* Rotativo */
+
+.slide-off {display: none;}
+body.sb_hotel .publi-1 { display:block !important;}
+
+#main #rotativo-hoteles {border: 1px solid #CCCCCC;border-radius: 4px 4px 0 0;height: 200px;margin-bottom: 20px;padding: 1px;width: 664px;}
+#main #rotativo-hoteles .buttons-container  {height: 25px;margin-bottom: 0;margin-left: 10px;margin-top: -34px; padding-top: 0;position: absolute;width:80px;*background-image: url("/pictures/06612-boton-1.png");background-image: url("/pictures/06612-boton-1.png")\0/;*background-color:transparent;*background-repeat: no-repeat;background-repeat: no-repeat\0/;*background-position: left center;background-position: left center\0/;background-color:transparent\0/;}
+#main #rotativo-hoteles .buttons-container ul {background-color: transparent;*background-image: url("/pictures/06612-boton-2.png");*background-position: right center;*background-repeat: no-repeat;background-image: url("/pictures/06612-boton-2.png")\0/;background-position: right center\0/;background-repeat: no-repeat\0/;height: 25px;margin-left: -3px;width:135px;}
+#main #rotativo-hoteles .buttons-container li {background-image: url("/pictures/06612-1b.gif");background-position: center center;background-repeat: no-repeat;cursor: pointer;float: left;height:19px;margin-left: 1px;margin-top: 0;padding-top: 5px;text-align: center;width: 20px; color:#ccc;}
+#main #rotativo-hoteles .buttons-container li.selected {background-image: url("/pictures/06612-1br.gif");color: #FFF;}
+#main #rotativo-hoteles .buttons-container li:hover {background-image: url("/pictures/06612-1br.gif");color: #FFF;}
+/* End *//* Rotativo */
+
+/* Carousel */
+#carousel-container {margin: 13px 0;padding: 1px;width: 663px;border: 1px solid #DDDDDD;color:#333;}
+#carousel-container .caroufredsel_wrapper {bottom: 0;display: block;float: none;height: 263px;left: 0;margin: 0;overflow: hidden;position: relative;right: 0;
+text-align: start;top: 0;width: 664px;z-index: auto;}
+#carousel-container .caroufredsel_wrapper #carousel {font-size: 11px;overflow: hidden;bottom: auto;float: none;height: 263px;left: -7px;margin: 0;position: absolute;/*position:relative;*/right: auto;text-align: left;top: 0;width: 4732px;z-index: auto;}
+#carousel-container .caroufredsel_wrapper #carousel .carousel-item {float: left;width: 213px;height: 263px;margin:0 8px 0 5px;padding-bottom: 0;}
+#carousel .carousel-item a, #carousel .carousel-item a:hover {display: block; color:#333; text-decoration:none;}
+#carousel .carousel-item a {position: relative;}
+#carousel .carousel-item a .text-overlay{position:absolute;text-align:left;text-shadow:1px 1px 2px #333333, -1px -1px 2px #333333;padding:8px 10px;top:15px;width:130px;height:40px;font-size:14px;line-height:18px;font-style:italic;}
+#carousel .carousel-item a p, #carousel .carousel-item a h4 {margin: 0 9px;}
+#carousel .carousel-item h4 {font-size: 14px;font-weight: bold;margin: 12px 9px;color: #0063be;}
+#carousel .carousel-item img.carousel-pic {border: medium none;height: 120px;width: 213px;background: none repeat scroll 0 0 #777777;}
+#carousel .carousel-item .item-description {height: 61px;margin: 0 9px;}
+#carousel .carousel-item .item-destination {font-size: 13px;height: 14px; color:#006699;}
+#carousel .carousel-item a span.float-right{margin-right:18px;}
+#carousel .carousel-item a:hover h4{text-decoration:underline;}
+#carousel .carousel-item .price{font-weight:bold;font-size:12px;padding-left:3px;}
+
+#carousel .carousel-item h4{font-size:14px;margin:12px 9px !important;font-weight:bold;}
+#carousel .carousel-item .item-description{margin:0 9px;height:61px;}
+#carousel .carousel-item .item-destination{font-size:13px;height:14px;}
+#carousel .carousel-item .item-offer{line-height:22px;padding-bottom:6px;}
+#carousel .carousel-item img.carousel-pic{width:213px;height:120px;border:none;}
+
+#carousel-footer{height:22px;background:#efefef;background-image:url(/pictures/carousel-footer.png);}
+
+#carousel-footer .carousel-button{cursor:pointer;width:25px;height:22px;}
+#carousel-footer #arrow-back{float:left;background-image:url(/pictures/arrowleft-carousel-active.gif);}
+#carousel-footer #arrow-next{float:right;background-image:url(/pictures/arrowright-carousel-active.gif);}
+#carousel-container .buttons-container{ color: #333333;display: block;margin: 0 0 0 30%;position: absolute;z-index: 100;}
+#carousel-container .buttons-container li {background-image: url("/pictures/circle_off_blue.gif");background-position: center center;background-repeat: no-repeat;cursor: pointer;float: left;height:19px;margin-left: 1px;margin-top: 0;padding-top: 5px;text-align: center;width: 20px; color:#ccc;}
+#carousel-container .buttons-container li.selected {background-image: url("/pictures/circle_on_blue.gif");color: #FFF;}
+
+#carousel-footer #carousel-back a{display:block;width:25px;height:22px;}
+#carousel-footer #carousel-next{float:right;}
+#carousel-footer #carousel-next a{display:block;width:25px;height:22px;}
+#carousel-footer #carousel-pagination{padding-top:4px;width:400px;margin:0 auto;text-align:center;}
+#carousel-footer #carousel-pagination a{width:14px;height:14px;margin:0 5px;display:inline-block;}
+#carousel-footer #carousel-pagination a span{display:none;}
+
+
+#carousel-container{border:1px solid #ddd;}
+#carousel{color:#333;}
+#carousel .carousel-item{background-color:#FBFBFB;}
+#carousel .carousel-item a .text-overlay{background:#c00000;color:#fff;}
+#carousel .carousel-item a, #carousel .carousel-item a:hover{color:#333;}
+#carousel .carousel-item a:hover{background:#ededed;}
+#carousel .carousel-item .price{color:#0063be}
+#carousel .carousel-item h4{color:#0063be}
+#carousel .carousel-item .item-destination{color:#0063be}
+#carousel .carousel-item .item-offer{color:#828282;}
+#carousel .carousel-item img.carousel-pic{background:#777;}
+#carousel-footer #carousel-back a{background:url(/pictures/arrow_sx_carousel_active_blue.gif) no-repeat;}
+#carousel-footer #carousel-back a:hover{background:url(/pictures/arrow_sx_carousel_over_blue.gif) no-repeat;}
+#carousel-footer #carousel-next a{background:url(/pictures/arrow_dx_carousel_active_blue.gif) no-repeat;}
+#carousel-footer #carousel-next a:HOVER{background:url(/pictures/arrow_dx_carousel_over_blue.gif) no-repeat;}
+#carousel-footer #carousel-pagination a{background:url(/pictures/circle_off_blue.gif) no-repeat;}
+#carousel-footer #carousel-pagination a.selected{background:url(/pictures/circle_on_blue.gif) no-repeat;}
+/* End *//* Carousel */
+
+
+/*/ Sidebar /*/
+/* BoxLogin */
+#container #sidebar #login-box {float: right; display:block;width:300px;height:44px;border: 1px solid #dddddd;border-radius: 4px 4px 0px 0px;text-decoration: none; margin-bottom:17px;}
+#container #sidebar #login-box .login-head{width:296px;height:15px;background:#F2F2F2;border-radius: 4px 4px 0px 0px;text-decoration: none; margin:2px 0 0 2px; color: #0063be;font-size: 12px;font-weight: bold;}
+#container #sidebar #login-box .login-head span { width:20px;height: 10px;display: block;float: right; top: 0; cursor:pointer;}
+#container #sidebar #login-box span{ position:relative; top:5px; margin-left:10px}
+#container #sidebar #login-box a{color:#006699;}
+
+/* Publicidad 300x250 */
+#container #sidebar #mega {float: right; width: 300px;margin: 0 0 17px 0;}
+#container #sidebar #mega .hm3 {float: left;width: 300px;margin: 0 0 17px 0;}
+#container #sidebar #mega .hm4 {float: left;width: 300px;}
+/* DX_Box */
+#container #sidebar #block-boxes {float: right;width: 300px; min-height:398px; border:1px solid #dddddd;}
+#container #sidebar #block-boxes .dx_box { width:296px; height:91px; margin:2px 0 10px 2px; background:#f2f2f2;}
+#container #sidebar #block-boxes .dx_box .dx_box-image {float:left;width:152px; height:85px; margin:2px 0 0 2px; border:1px solid #ccc;}
+#container #sidebar #block-boxes .dx_box .dx_box-image a{float:left;width:150px; height:83px; background:#FFF}
+#container #sidebar #block-boxes .dx_box .dx_box-txt {float: right; width:135px; margin:10px 0 0 0;}
+#container #sidebar #block-boxes .dx_box .dx_box-txt h4{color: #0063be;font-size: 12px;font-weight: bold; margin:0;}
+#container #sidebar #block-boxes .dx_box .dx_box-txt p{font-size: 11px;font-weight: normal;color:#333;margin:8px 0 0 0;min-height: 35px;}
+#container #sidebar #block-boxes .dx_box .dx_box-txt a {float:right; padding-right:14px; text-decoration:none; color: #0063be;font-size: 11px;font-weight: normal;}
+#container #sidebar #block-boxes .dx_box.last {margin:2px 0 2px 2px !important;}
+/* dx_box:hover */
+#container #sidebar #block-boxes .dx_box:hover {background:#e6e6e6;}
+#container #sidebar #block-boxes .dx_box:hover .dx_box-image{ border:1px solid #0075c5;}
+#container #sidebar #block-boxes .dx_box:hover a:hover {text-decoration:underline;}
+
+/*/ Bottom /*/
+/* TripAdvisor */
+#container #bottom #tripadvisor {margin: 17px 0 0 0;width: 980px; height:33px; background:#fbfbfb;border: 1px solid #dddddd;border-radius: 4px 4px 0px 0px;text-decoration: none; margin-bottom:17px;}
+#container #bottom #tripadvisor p{ font-weight:bold; position:relative;left:12px; margin:0; line-height:36px;}
+#container #bottom #tripadvisor p img{  position:relative; top:3px; left:5px;}
+
+.vg_section_title a.vg_off_foot { color:#333333}

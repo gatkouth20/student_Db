@@ -1,0 +1,240 @@
+/* header */
+#vg_header{ width: 980px; height: 140px; position: relative; z-index: 11; }
+#vg_logo{ width: 155px; height: 90px; float: left; margin: 5px 0 0 0; }
+#vg_leaderboard{ width: 728px; height: 90px; float: right; }
+.vg_tab {height: 29px; width:71px; text-align: center; font-weight: bold;}
+.vg_tab a, .vg_tab a:hover, .vg_tab a:visited{color: #FFF; text-decoration: none; width:71px; height:29px; font: bold 16px Arial; display: block; padding:6px 0 0 0;}
+#vg_tab_voli{ position: absolute; top: 106px; background: transparent url('http://www1.staticroot.com/images/main-header/tab/tab-voli-it.png') 0 0 no-repeat;} 
+#vg_tab_hotel{ position: absolute; top: 106px; left: 75px; background: transparent url('http://www2.staticroot.com/images/main-header/tab/tab-hotel-it.png') 0 0 no-repeat;} 
+#vg_tab_mappe{position: absolute; top: 106px; left: 225px; background: transparent url('http://www3.staticroot.com/images/main-header/tab/tab-mappe-it.png') 0 0 no-repeat;}
+#vg_tab_guide{position: absolute; top: 106px; left: 150px; background: transparent url('http://www1.staticroot.com/images/main-header/tab/tab-guide-it.png') 0 0 no-repeat;}
+#vg_tab_auto{position: absolute; top: 106px; left: 225px; background: transparent url('http://www2.staticroot.com/images/main-header/tab/tab-auto-green-it.png') 0 0 no-repeat;}
+#vg_tab_shuttle{position: absolute; top: 106px; left: 300px; background: transparent url('http://www3.staticroot.com/images/main-header/tab/tab-shuttle-it.png') 0 0 no-repeat;}
+#vg_tab_guide_cobrand{position: absolute; top: 106px; left: 150px; background: transparent url('http://www1.staticroot.com/images/main-header/tab/tab-guide-it.png') 0 0 no-repeat;}
+#vg_tab_auto_cobrand{position: absolute; top: 106px; left: 225px; background: transparent url('http://www1.staticroot.com/images/main-header/tab/tab-auto-green-it.png') 0 0 no-repeat;}
+
+#vg_preferiti_voli{
+	position: absolute;
+	top: 100px;
+	left: 755px;
+	padding:0 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border: solid 1px #91BDD8;
+	border-top:0;
+	border-bottom: 0;
+} 
+#vg_preferiti_mappe{ position: absolute; top: 100px; left: 778px; padding:0 5px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; border: solid 1px #99CA21; border-top:0; border-bottom: 0;} 
+#vg_preferiti_hotel{
+	position: absolute;
+	top: 100px;
+	left: 755px;
+	padding:0 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border: solid 1px #FF4B08;
+	border-top:0;
+	border-bottom: 0;
+} 
+#vg_preferiti_auto{ position: absolute; top: 100px; left: 778px; padding:0 5px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; border: solid 1px #C70000; border-top:0; border-bottom: 0;} 
+#vg_preferiti_guide{
+	position: absolute;
+	top: 100px;
+	left: 756px;
+	padding:0 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border: solid 1px #FEC114;
+	border-top:0;
+	border-bottom: 0;
+} 
+
+#vg_preferiti_voli a{color: #237AB0; font-weight: bold; display: block; text-decoration: none;}
+#vg_preferiti_hotel a{color: #237AB0; font-weight: bold; display: block; text-decoration: none;}
+#vg_preferiti_mappe a{color: #237AB0; font-weight: bold; display: block; text-decoration: none;}
+#vg_preferiti_auto a{color: #237AB0; font-weight: bold; display: block; text-decoration: none;}
+#vg_preferiti_guide a{color: #237AB0; font-weight: bold; display: block; text-decoration: none;}
+
+#vg_call_center{
+	position: absolute;
+	top: 95px;
+	left: 384px;
+	width: 358px;
+	height: 37px;
+	background: transparent url('http://www3.staticroot.com/images/main-header/callcenter/callcenter-flights-com.png') 0 0 no-repeat;
+} 
+#vg_call_center_hotel{
+	position: absolute;
+	top: 94px;
+	left: 389px;
+	width: 358px;
+	height: 37px;
+	background: transparent url('http://www1.staticroot.com/images/main-header/callcenter/callcenter-hotel-com.png') 0 0 no-repeat;
+} 
+#vg_other_number{ position: relative; top: 24px; right: 22px; width:150px;} 
+#vg_other_number a{ font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #404040; font-weight: bold; text-decoration: underline; } 
+#vg_flags{
+	position: absolute;
+	top: 93px;
+	left: 896px;
+	width: 85px;
+} 
+
+/*Contatti modifica Maggio 2010*/
+#vg_cust_service{position: absolute;top: 95px;left: 408px;width: 325px;height: 37px;}
+#vg_cust_service_txt{ float:right; width: 250px;}
+#vg_cust_service_txt img{ float:left;}
+#vg_cust_service_txt a{font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #FF4B08; font-weight: bold; text-decoration:none;}
+#vg_cust_service_txt a:hover{ text-decoration:underline; }
+#vg_cust_service_txt a span{ font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #000000; font-weight: bold;}
+
+#vg_flags ul{ list-style: none; margin: 0; padding: 0; } 
+#vg_flags li{ float: left; margin: 0 2px 0 0; padding: 0;} 
+#vg_flags li img{float: left;}
+#vg_line_voli{ position: absolute; top: 135px; width: 980px; height: 5px; width: 100%; background: #1C6FA9; font-size: 0px; }
+#vg_line_hotel{ position: absolute; top: 135px; width: 980px; height: 5px; width: 100%; background: #FF4B08; font-size: 0px; } 
+#vg_line_auto{ position: absolute; top: 135px; width: 980px; height: 5px; width: 100%; background: #C70000; font-size: 0px; } 
+#vg_line_guide{ position: absolute; top: 135px; width: 980px; height: 5px; width: 100%; background: #FEC114; font-size: 0px; } 
+#vg_line_viaggi{ position: absolute; top: 135px; width: 980px; height: 5px; width: 100%; background: #C70000; font-size: 0px; }
+
+#vg_img{ float: left; }
+#vg_input{float: left; height: 13px; font-size: 10px; width: 147px; border: 1px solid #1B6FA8; }
+#vg_iframe_leaderboard{ width: 728px; height: 90px; }
+
+/* header alternative */
+#vg_header_alternative{ width: 980px; height: 65px; position: relative; }
+#vg_header_alternative_logo{ float: left; }
+#vg_header_alternative_callcenter{ float: right; }
+#vg_header_alternative_line{ position: absolute; top: 60px; width: 980px; height: 5px; background-color: #247AB1; font-size: 0px; }
+
+/* footer */
+#vg_footer{ width: 980px; position: relative; }
+#vg_credit{ float: left; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #666666; width: 650px; padding-top: 25px; }
+#vg_logos{ float: right; width: 280px; text-align: right; }
+#vg_logos img{ padding: 0 0 0 0;  }
+.vg_section_text{ float: right; width: 880px; }
+.vg_section_text ul{ list-style: none; margin: 0; padding: 0; }
+.vg_section_text li{ float:left; white-space: nowrap; line-height: 18px; }
+.vg_section_text li a{ font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #666666; text-decoration: none; border-right: solid 1px #666666; padding: 0 5px 0 5px;}
+.vg_section_text li a:hover{ font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #666666; text-decoration: underline; }
+.vg_section_title{ float: left; width: 100px; padding: 5px 0 0 0; font-weight: bold; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #333333; }
+
+/* centratura volagratis e lingue */
+body.volagratis #vg_footer,
+body.volagratis #vg_wizard-new,
+body.volagratis #vg_banner_container,
+body.volagratis #vg_body_container,
+body.volagratis .vg_body_container,
+body.volagratis #vg_header,
+body.volagratis #vg_header_alternative,
+body.volagratis .vg_line_dotted,
+body.volagratis #vg_pay_partner,
+body.volagratis #vg_button_bar {
+   float: none;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/* menu languages */
+div#sitemap-link {
+   position: absolute;
+   bottom: 10px;
+   right: 107px;
+   font-size: 12px;
+   font-family: Arial,Helvetica,sans-serif;
+}
+div#language.hotel span { /*hotel*/
+   background: #FF4B08;
+   border: 1px solid #FF4B08;
+   border-bottom: none;
+}
+
+div#sitemap-link a:hover {
+   text-decoration: none;
+}
+
+div#sitemap-link a {
+   color: #1C6FA9;
+}
+
+div#language {
+   font-size: 12px;
+   font-family: Arial,Helvetica,sans-serif;
+   position: absolute;
+   bottom: 6px;
+   right: 0;
+   z-index: 1;
+}
+
+div#language span {
+   background: #1C6FA9;
+   border: 1px solid #1C6FA9;
+   color: #fff;
+   font-weight: bold;
+   border-bottom: none;
+   padding: 7px 7px 5px 32px;
+   line-height: 22px;
+   cursor: pointer;
+   position: relative;
+   z-index: 2;
+   position: relative;
+   top: 0;
+   left: 0;
+}
+
+div#language span img {
+   position: absolute;
+   left: 5px;
+   top: 4px;
+}
+
+div#language span.language-on {
+   padding-bottom: 6px;
+   color: #1C6FA9;
+   background: #fff;
+}
+
+div#language ul {
+   display: none;
+   position: absolute;
+   top: 23px;
+   right: 0;
+   width: 200px;
+   background: #fff;
+   z-index: 1;
+   list-style: none;
+   margin: 0;
+   padding: 5px 0;
+   border: 1px solid #1C6FA9;
+}
+
+div#language ul li a {
+   display: block;
+   padding: 3px 6px;
+   text-decoration: none;
+   color: #000;
+}
+
+div#language ul li a:hover,
+div#language ul li a.selected {
+   background: #1C6FA9;
+   color: #fff;
+}
+
+div#language ul li a img {
+   vertical-align: middle;
+}
+
+/* CSS HACK IE 6 */
+*:first-child+html {} * html div#language span.language-on {
+   padding-bottom: 5px;
+}
+
+*:first-child+html {} * html div#language ul li a {
+   height: 0;
+}
+
+/* CSS HACK IE 7 */
+*:first-child+html div#language span.language-on {
+   padding-bottom: 5px;
+}

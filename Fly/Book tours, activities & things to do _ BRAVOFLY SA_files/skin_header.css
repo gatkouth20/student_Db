@@ -1,0 +1,572 @@
+html body {
+    margin:0;
+}
+.header12 {
+    background: transparent url('http://www3.staticroot.com/images/main-header/12/ico/bkg1.png') top left repeat-x;
+    height: 160px;
+    position: relative;
+    z-index: 6;
+}
+.header12 .container {
+    width: 980px;
+    height: 140px;
+    margin: 0 auto 0 auto;
+    position: relative;
+    font-family: Arial, Verdana,  Helvetica, sans-serif;
+}
+.header12 .menubar {
+    height: 38px;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+.header12 .menuleft {
+    float: left;
+}
+.header12 .menuright {
+    float: right;
+}
+
+.header12 .cleaner {
+    clear: both;
+}
+
+.header12 .menuitem {
+    float: left;
+    height: 38px;
+    line-height: 38px;
+    border-right: 1px solid #3384ad;
+    padding: 0 13px;
+}
+.header12 .other {
+    width: 64px;
+}
+.header12 .menuleft .open {
+    background: #064e71;
+}
+.header12 .menuitem:hover {
+    background: url('http://www3.staticroot.com/images/main-header/12/ico/menu_bg_hover.png') top left repeat;
+}
+.header12 .open:hover {
+    background: #064e71;
+}
+.header12 .menuitem a, .header12 .menuitem a:hover, .header12 .menuitem a:active, .header12 .menuitem a:visited {
+    text-decoration: none;
+    font-weight: normal;
+    color: #E8F1F6;
+    display:block;
+}
+
+.header12 ul li.menuitem .link_selected {
+    background: transparent url('http://www3.staticroot.com/images/main-header/12/ico/pointer.png') bottom center no-repeat;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFFFFF;
+    display: block;
+}
+.header12 .other a.otherlink, .header12 .other span {
+    display: block;
+    float: left;
+cursor:pointer;
+}
+/*-------------------------OTHER MENU------------------------------*/
+.header12 .othermenu_border {
+    background:url('http://www3.staticroot.com/images/main-header/12/ico/menu_border.png') top left repeat;
+    min-width: 190px;
+    clear: left;
+    position: relative;
+    left: 13px;
+    float:right;
+    padding: 0 5px 5px;
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;	
+    border-bottom-right-radius: 4px;
+    display: none;
+    z-index:10;
+/*hack ie7*/
+//float:none;
+//left: -13px;
+}
+.header12 .othermenu {
+    min-width: 190px;
+    background: #ffffff;
+    z-index: 50000;
+    padding: 7px 0;
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;	
+    border-bottom-right-radius: 4px;
+    color: #357291;
+    max-height: 400px;
+    overflow-y: auto;
+}
+.header12 .othermenu li {
+      padding: 0 10px;
+      line-height: 22px;
+      float:none;
+min-width:150px;
+}
+
+.header12 .othermenu li a.itemBreak {
+      border-top: 1px solid #CCC;
+      margin-top:5px;
+      padding-top:10px;
+}
+
+.header12 .othermenu li:hover {
+	background: #eaf2f7;
+}
+.header12 .othermenu a, .header12 .othermenu a:visited, .header12 .othermenu a:hover {
+	text-decoration: none;
+	color: #006699;
+        display:block;
+        line-height:14px;
+        padding:6px 0;
+min-width:150px;
+text-align:left;
+}
+.header12 .other span {
+    background: url('http://www3.staticroot.com/images/main-header/12/ico/arrow.png') top left no-repeat;
+    display: block;
+    float:right;
+    height: 4px;
+    margin: 17px 0;
+    width: 8px;
+}
+/*-------------------------OTHER MENU------------------------------*/
+
+.header12 .select_flag {
+    height: 38px;
+    float: right;
+	border-left: 1px solid #3384ad;
+}
+.header12 .select_flag:hover {
+	background: url('http://www3.staticroot.com/images/main-header/12/ico/menu_bg_hover.png') top left repeat;
+}
+#page-header.open .select_flag {
+	background: #064e71;
+}
+.header12 .select_flag_inner {
+    height: 22px;
+    line-height: 18 px;
+	padding: 8px 0 0 8px;
+    cursor: pointer;
+}
+.header12 .current_flag {
+    margin: 4px 0 0 5px;
+    float: left;
+    border: none;
+}
+.header12 .flag_eu, .header12 .flag_gb, .header12 .flag_it, .header12 .flag_de, .header12 .flag_fr, .header12 .flag_es,
+.header12 .flag_at, .header12 .flag_ru, .header12 .flag_uk, .header12 .flag_ch, .header12 .flag_mx, .header12 .flag_ca,
+.header12 .flag_us, .header12 .flag_hu, .header12 .flag_tr, .header12 .flag_ar, .header12 .flag_au, .header12 .flag_br,
+.header12 .flag_cz, .header12 .flag_dk, .header12 .flag_fi, .header12 .flag_hi, .header12 .flag_in, .header12 .flag_no,
+.header12 .flag_ph, .header12 .flag_pt, .header12 .flag_ro, .header12 .flag_za, .header12 .flag_sg, .header12 .flag_th,
+.header12 .flag_vn, .header12 .flag_my, .header12 .flag_pl, .header12 .flag_cn, .header12 .flag_sv, .header12 .flag_vn,
+.header12 .flag_kk, .header12 .flag_be
+{
+    background: transparent url('http://www3.staticroot.com/images/main-header/12/ico/flags.png ') top left no-repeat;
+    width: 15px;
+    height: 12px;
+    -moz-box-shadow: 1px 1px 2px #BBB;
+    box-shadow: 1px 1px 2px #BBB;
+}
+.header12 .flag_gb {
+    background-position: -16px 0;
+}
+.header12 .flag_it {
+    background-position: -32px 0;
+}
+.header12 .flag_de {
+    background-position: -48px 0;
+}
+.header12 .flag_fr {
+    background-position: -64px 0;
+}
+.header12 .flag_es {
+    background-position: -80px 0;
+}
+.header12 .flag_at {
+    background-position: -96px 0;
+}
+.header12 .flag_ru {
+    background-position: -112px 0;
+}
+.header12 .flag_uk {
+    background-position: -128px 0;
+}
+.header12 .flag_ch {
+    background-position: -144px 0;
+}
+.header12 .flag_mx {
+    background-position: -160px 0;
+}
+.header12 .flag_ca {
+    background-position: -176px 0;
+}
+.header12 .flag_us {
+    background-position: -192px 0;
+}
+.header12 .flag_hu {
+    background-position: -208px 0;
+}
+.header12 .flag_tr {
+    background-position: -224px 0;
+}
+.header12 .flag_ar {
+    background-position: -240px 0;
+}
+.header12 .flag_au {
+    background-position: -256px 0;
+}
+.header12 .flag_br {
+    background-position: -272px 0;
+}
+.header12 .flag_cz {
+    background-position: -288px 0;
+}
+.header12 .flag_dk {
+    background-position: -304px 0;
+}
+.header12 .flag_fi {
+    background-position: -320px 0;
+}
+.header12 .flag_in {
+    background-position: -336px 0;
+}
+.header12 .flag_hi {
+    background-position: -352px 0;
+}
+.header12 .flag_no {
+    background-position: -368px 0;
+}
+.header12 .flag_ph {
+    background-position: -384px 0;
+}
+.header12 .flag_pt {
+    background-position: -400px 0;
+}
+.header12 .flag_ro {
+    background-position: -416px 0;
+}
+.header12 .flag_za {
+    background-position: -432px 0;
+}
+.header12 .flag_sg {
+    background-position: -448px 0;
+}
+.header12 .flag_th {
+    background-position: -464px 0;
+}
+.header12 .flag_vn {
+    background-position: -480px 0;
+}
+.header12 .flag_cn {
+    background-position: -496px 0;
+}
+.header12 .flag_pl {
+    background-position: -512px 0;
+}
+.header12 .flag_sv {
+    background-position: -528px 0;
+}
+.header12 .flag_my {
+    background-position: -544px 0;
+}
+.header12 .flag_kk {
+    background-position: -560px 0;
+}
+.header12 .flag_be {
+    background-position: -576px 0;
+}
+
+.header12 .small_separator {
+    border-left: 1px solid #015581;
+    border-right: 1px solid #0084c4;
+    height: 16px;
+    width: 0;
+    float: left;
+    margin: 3px 0 0 5px;
+}
+.header12 .current_flag_text {
+    font-size: 12px;
+    float: left;
+    margin: 3px 5px 0 5px;
+}
+.header12 .arrow {
+    background: transparent url('http://www3.staticroot.com/images/main-header/12/ico/arrow.png') no-repeat 0 0;
+    float: left;
+    width: 8px;
+    height: 4px;
+    margin: 9px 10px 0 5px;
+}
+.header12 .assist_number_full_height {
+    float: left;
+    font-size: 27px;
+    font-weight: bold;
+    height: 35px;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+.header12 .assist_number_container {
+    float: right;
+    margin: 0 5px 0 10px;
+}
+.header12 .assist_number_smaller {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    height: 24px;
+}
+.header12 .assist_green_number {
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 11px;
+    height: 11px;
+}
+
+.header12 .assist_container {
+    float:left;
+    margin-right: 5px;
+}
+.header12 .assistent_line1of2 {
+    text-align: right;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 25px;
+    height: 18px;
+}
+.header12 .assistent_line2of2 {
+    text-align: right;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 15px;
+    color: #b3d1e1;
+	
+}
+.header12 .assistent_line1of3 {
+    text-align: left;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 12px;
+    height: 12px;
+}
+.header12 .assistent_line2of3 {
+    text-align: left;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 12px;
+    height: 12px;
+}
+.header12 .assistent_line3of3 {
+    text-align: left;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 12px;
+    height: 12px;
+}
+.header12 .headphones_white {
+    background: transparent url('http://www3.staticroot.com/images/main-header/12/ico/headphones_white_right.gif') -10px -3px no-repeat;
+    float: right;
+    width: 32px;
+    height: 33px;
+    margin: 3px 5px 0 0;
+}
+.header12 .logo_banner_cont {
+    height: 90px;
+    margin-top: 7px;
+}
+.header12 .logo_container {
+    float: left;
+    height: 90px;
+    margin-left: 21px;
+}
+.header12 .banner_container {
+    float: right;
+    width: 728px;
+    height: 90px;
+    margin-right: 3px;
+}
+#header12_flags_popup {
+    width: 170px;
+    position: absolute;
+    right: 0;
+    top: 38px;
+    display: none;
+    background: url('http://www3.staticroot.com/images/main-header/12/ico/menu_border.png') left top repeat;
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 0 5px 5px 5px;
+}
+
+.header12 .language_menu_scoller {
+    -moz-border-radius-bottomleft: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    -moz-border-radius-bottomright: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background: #fff;
+    padding: 7px 0;
+    overflow-y: auto;
+    max-height: 270px;
+    height: auto !important;
+    height: 270px;
+}
+
+.language_menu_scoller .language_item {
+    float: none;
+}
+
+.header12 .language_item, .header12 .language_item:hover {
+    padding: 0 7px;
+    text-align: left;
+    line-height: 18px;
+    font-size: 13px;
+    cursor: pointer;
+    zoom: 1;
+}
+.header12 .language_item:hover {
+    background-color: #DCE9f2;
+}
+.header12 .language_item a, .header12 .language_item a:hover,
+.header12 .language_item a:active, .header12 .language_item:visited {
+    display: block;
+    color: #006699;
+    text-decoration: none;
+}
+
+/*.header12 .language_item_selected {
+    text-decoration: underline;
+}*/
+.header12 .language_item .lang_icon {
+    float: left;
+    margin: 2px 7px 0 0;
+}
+
+.header12 a.assistance_link, .header12 a.assistance_link:hover,
+.header12 a.assistance_link:visited, .header12 a.assistance_link:active   {
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * SLIM HEADER USED IN PAYMENT PAGES * * * * * * * * * * * * * * * * * * * */
+.slimheader12 {
+    background: #ffffff url('http://www3.staticroot.com/images/main-header/12/slim-header-bkg.png') top left repeat-x;
+    height: 82px;
+}
+.slimheader12 .container {
+    width: 980px;
+    height: 60px;
+    margin: 0 auto 0 auto;
+    padding-top: 18px;
+    font-family: Arial, Verdana,  Helvetica, sans-serif;
+}
+.slimheader12 .container_inner {
+}
+.slimheader12 .logo_container {
+    float: left;
+    height: 47px;
+    margin-left: 10px;
+}
+.slimheader12 .assistent_data {
+    float: right;
+    margin-top: 10px;
+    cursor:pointer;
+}
+.slimheader12 a.assistance_link, .slimheader12 a.assistance_link:hover,
+.slimheader12 a.assistance_link:visited, .slimheader12 a.assistance_link:active   {
+    color: #006699;
+    text-decoration: none;
+}
+.slimheader12 .assist_number_full_height {
+    float: right;
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 40px;
+    height: 38px;
+    margin-right: 5px;
+}
+.slimheader12 .assist_container {
+    float:right;
+    margin-right: 5px;
+    margin-top: 6px;
+}
+.slimheader12 .assistent_line1of2 {
+    text-align: left;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 12px;
+    height: 12px;
+}
+.slimheader12 .assistent_line2of2 {
+    text-align: left;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 12px;
+    height: 12px;
+}
+.slimheader12 .headphones_blue {
+    background: transparent url('http://www3.staticroot.com/images/main-header/12/ico/headphones-blu.gif') top left no-repeat;
+    float: right;
+    width: 29px;
+    height: 29px;
+    margin: 5px 5px 0 0;
+}
+#page-header.open #header12_flags_popup {
+    display: block;
+}
+#page-header.close #header12_flags_popup {
+    display: none;
+}
+#header12_flags_popup {
+    z-index: 50000;
+}
+
+/*#page-header.open .arrow {
+    background-position: -8px 0;
+}
+#page-header.close .arrow {
+    background-position: 0 0;
+}*/
+
+/* Header width fix */
+#page-header {
+    box-flex: 1;
+    display: box;
+    display: -webkit-flex;
+    display: flex;
+    min-width: 980px;
+}
+@media screen and (min-width: 0) and (max-width: 768px) {
+    #page-header {
+        min-width: auto;
+    }
+}
+/* end header width fix */
+
+/* old classes patch */
+.bannerContainer {
+   top: 45px !important;
+   left: 50%;
+   margin: 0 auto 0 -238px;
+   position: absolute;
+   width: 728px;
+   z-index: 40000;
+}
+#ad728 {
+   left: 0 !important;
+   top: 0 !important;
+   position: relative;
+   right: 0 !important;
+   width: 728px !important;
+}

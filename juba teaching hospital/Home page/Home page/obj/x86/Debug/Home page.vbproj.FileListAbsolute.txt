@@ -1,0 +1,16 @@
+C:\Users\USER\Desktop\juba teaching hospital\Home page\Home page\bin\Debug\Home page.exe
+C:\Users\USER\Desktop\juba teaching hospital\Home page\Home page\bin\Debug\Home page.pdb
+C:\Users\USER\Desktop\juba teaching hospital\Home page\Home page\bin\Debug\Home page.xml
+C:\Users\USER\Desktop\juba teaching hospital\Home page\Home page\obj\x86\Debug\Home_page.Form1.resources
+C:\Users\USER\Desktop\juba teaching hospital\Home page\Home page\obj\x86\Debug\Home_page.Resources.resources
+C:\Users\USER\Desktop\juba teaching hospital\Home page\Home page\obj\x86\Debug\Home page.vbproj.GenerateResource.Cache
+C:\Users\USER\Desktop\juba teaching hospital\Home page\Home page\obj\x86\Debug\Home page.exe
+C:\Users\USER\Desktop\juba teaching hospital\Home page\Home page\obj\x86\Debug\Home page.xml
+C:\Users\USER\Desktop\juba teaching hospital\Home page\Home page\obj\x86\Debug\Home page.pdb
+C:\Users\USER\Desktop\juba teaching hospital\Home page\Home page\bin\Debug\OnlineBanking.mdb
+C:\Users\USER\Desktop\juba teaching hospital\Home page\Home page\bin\Debug\Home page.exe.config
+C:\Users\USER\Desktop\juba teaching hospital\Home page\Home page\obj\x86\Debug\Home_page.Open_account_form.resources
+C:\Users\USER\Desktop\juba teaching hospital\Home page\Home page\obj\x86\Debug\Home_page.Hall.resources
+C:\Users\USER\Desktop\juba teaching hospital\Home page\Home page\obj\x86\Debug\Home_page.Deposit_form.resources
+C:\Users\USER\Desktop\juba teaching hospital\Home page\Home page\obj\x86\Debug\Home_page.Customer_form.resources
+C:\Users\USER\Desktop\juba teaching hospital\Home page\Home page\obj\x86\Debug\Home_page.CheckBook.resources

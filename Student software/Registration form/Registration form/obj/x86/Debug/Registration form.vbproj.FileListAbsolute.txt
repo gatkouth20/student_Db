@@ -1,0 +1,10 @@
+C:\Users\USER\Desktop\Student software\Registration form\Registration form\bin\Debug\Registration form.exe
+C:\Users\USER\Desktop\Student software\Registration form\Registration form\bin\Debug\Registration form.pdb
+C:\Users\USER\Desktop\Student software\Registration form\Registration form\bin\Debug\Registration form.xml
+C:\Users\USER\Desktop\Student software\Registration form\Registration form\obj\x86\Debug\Registration_form.Form1.resources
+C:\Users\USER\Desktop\Student software\Registration form\Registration form\obj\x86\Debug\Registration_form.Resources.resources
+C:\Users\USER\Desktop\Student software\Registration form\Registration form\obj\x86\Debug\Registration form.vbproj.GenerateResource.Cache
+C:\Users\USER\Desktop\Student software\Registration form\Registration form\obj\x86\Debug\Registration form.exe
+C:\Users\USER\Desktop\Student software\Registration form\Registration form\obj\x86\Debug\Registration form.xml
+C:\Users\USER\Desktop\Student software\Registration form\Registration form\obj\x86\Debug\Registration form.pdb
+C:\Users\USER\Desktop\Student software\Registration form\Registration form\obj\x86\Debug\Registration form.vbprojResolveAssemblyReference.cache

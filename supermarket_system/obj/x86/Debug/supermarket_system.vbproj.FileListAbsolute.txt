@@ -1,0 +1,64 @@
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\bin\Debug\supermarket_system.exe
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\bin\Debug\supermarket_system.pdb
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\bin\Debug\supermarket_system.xml
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\bin\Debug\MySql.Data.dll
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.vbprojResolveAssemblyReference.cache
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Form1.resources
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Resources.resources
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.vbproj.GenerateResource.Cache
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.exe
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.xml
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.pdb
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Chall_form.resources
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Deliver_form.resources
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Employee_form.resources
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.employee_master.resources
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Supermarket_home_Page.resources
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Members_Record.resources
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Item_detail.resources
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.purchase_form.resources
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Purchase_master_form.resources
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Sale_Detail_form.resources
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Supply_form.resources
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Section_form.resources
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.register_form.resources
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Deliver_View.resources
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Member_View.resources
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Login_form.resources
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Supply_View.resources
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Purch_master.resources
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.purchase_View.resources
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Home.resources
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\bin\Debug\supermarket_system.exe.config
+C:\Users\USER\Desktop\Student software\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.challReport.resources
+D:\supermarket_system\supermarket_system\bin\Debug\supermarket_system.exe.config
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.exe
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.xml
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.pdb
+D:\supermarket_system\supermarket_system\bin\Debug\supermarket_system.exe
+D:\supermarket_system\supermarket_system\bin\Debug\supermarket_system.pdb
+D:\supermarket_system\supermarket_system\bin\Debug\supermarket_system.xml
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.vbprojResolveAssemblyReference.cache
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Chall_form.resources
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Deliver_form.resources
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Deliver_View.resources
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Employee_form.resources
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.employee_master.resources
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Form1.resources
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Home.resources
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Item_detail.resources
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Login_form.resources
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Member_View.resources
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Members_Record.resources
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Resources.resources
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.purchase_form.resources
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Purchase_master_form.resources
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.purchase_View.resources
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Purch_master.resources
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.register_form.resources
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Sale_Detail_form.resources
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Section_form.resources
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Supermarket_home_Page.resources
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Supply_form.resources
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.Supply_View.resources
+D:\supermarket_system\supermarket_system\obj\x86\Debug\supermarket_system.vbproj.GenerateResource.Cache

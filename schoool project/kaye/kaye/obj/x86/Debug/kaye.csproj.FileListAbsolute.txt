@@ -1,0 +1,5 @@
+C:\Users\USER\Desktop\schoool project\kaye\kaye\bin\Debug\kaye.exe
+C:\Users\USER\Desktop\schoool project\kaye\kaye\bin\Debug\kaye.pdb
+C:\Users\USER\Desktop\schoool project\kaye\kaye\obj\x86\Debug\kaye.exe
+C:\Users\USER\Desktop\schoool project\kaye\kaye\obj\x86\Debug\kaye.pdb
+C:\Users\USER\Desktop\schoool project\kaye\kaye\obj\x86\Debug\kaye.csprojResolveAssemblyReference.cache

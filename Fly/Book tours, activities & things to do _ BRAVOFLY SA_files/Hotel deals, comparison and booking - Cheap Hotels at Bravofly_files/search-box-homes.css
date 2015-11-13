@@ -1,0 +1,115 @@
+
+/* CSS Document */
+
+/* Elementos comunes */
+
+#search-box fieldset label{ font-weight:bold; font-size:12px; color:#222222;}
+.title { font-weight: bold; }
+.separacion{ background-image: url("/pictures/line-sep-bvf.gif");background-repeat: repeat-x;clear: both;height: 1px; margin-bottom:6px; margin-top:12px;}
+.separacion-child{ background-image: url("/pictures/line-sep-bvf.gif");background-repeat: repeat-x;clear: both;height: 10px; margin-left: 11px; width: 198px;}
+.bf-submit-button {margin-left:104px; border-radius: 5px 5px 5px 5px; margin-top:15px; text-indent:0; height:none !important;  background: url("/pictures/btn-bvf-sprite.png") no-repeat scroll 0 0 transparent; }
+.bf-submit-button .bf-label {color: #FFFFFF;font-size: 14px;font-weight: bold;line-height: 30px;text-decoration: none;text-transform: uppercase; background: transparent !important; border:none !important; border-radius: 5px 5px 5px 5px; height:25px !important; cursor:pointer; padding-left:15px; padding-right:15px; font-family:arial;}
+#location-dep.form-column span.ajax-loader.invisible {display:none;}
+
+/*Search-Box-Hotel*/
+
+#search-box.hotel div#search-box {border: 1px solid #DDDDDD;border-radius: 6px 6px 6px 6px;margin-bottom: 10px;padding:1px;font-family: Arial,Helvetica,sans-serif;font-size:12px; background-color:#F5F6FA;max-width: 667px;min-width: 664px;}
+#location-dep.form-column input#arrCity {clear:both; background-color:white; width:435px; height:23px\0/; padding-top:5px\0/;}
+div#search-box div#search-box-hotel.search-box {border:none; padding: 10px 5px 5px 10px;}
+#search-box.hotel div#search-box div.search-box-sup div.titulo h1 {background-color: #0063be;border-radius: 4px 4px 0 0;color: white;font-size: 21px;font-weight: bold;margin: 0px;padding: 15px 10px 11px;text-align: left;}
+#search-box.hotel input {background: none repeat scroll 0 0 white; border: 1px solid #CCCCCA;}
+#search-box-hotel fieldset.locations{ width:100%; margin:0px !important;}
+#search-box-hotel fieldset.locations ul{line-height:18px; margin-top:3px;}
+#body.hotel #search-box #ciudadesEspanolas{top:240px; left:380px}
+#body.hotel #search-box #ciudadesInternacionales{ left: 347px;top: 142px;width: auto;z-index: 300; background-color: #F5F6FA;}
+#body.hotel #search-box #agesForm{ border: 2px solid #DDDDDD;border-radius: 5px 5px 5px 5px;margin-bottom: 10px; background-color: #F5F6FA; top:204px; left:532px; z-index:4;}
+#search-box.hotel #distance {width:400px; }
+#HotelSearchForm fieldset.locations div.form-column { float:left;}
+#HotelSearchForm fieldset.locations div.form-column span input#distance.checkbox {width:13px; border:none; background-color:#F5F6FA; margin-left:24px;}
+#search-box.hotel #location-dep {width:auto;}
+#search-box.hotel #distance{width:200px;}
+#search-box.hotel #destinos.form-column{margin: 0 0 0 125px; padding:0px;}
+#search-box.hotel fieldset .dates {width:100%;}
+#HotelSearchForm fieldset.noches div.form-column{float:left; width:104px; height:70px;}
+#HotelSearchForm fieldset.noches {width:346px; height:60px; float:left;}
+#HotelSearchForm fieldset.categoria {width:211px; height:60px; float:left;}
+#HotelSearchForm fieldset.formula {width:190px;}
+#search-box.hotel fieldset.dates div.form-colum {width:211px;float:left;}
+#HotelSearchForm fieldset.personas {float:left; }
+#HotelSearchForm fieldset.formula {float:left; }
+#HotelSearchForm fieldset.noches div.form-column label.title {width:138px;}
+#search-box input.highlight,#search-box select.highlight{background: none repeat scroll 0 0 white;border: 1px solid #CCCCCA !important;}
+#search-box span.calicon-link {background-image: url(/pictures/sprite-search-icons.png); display: inline-block; height: 16px; width: 20px; left:0 !important; background-repeat: no-repeat;}
+.locations-autocomplete-results ul.cities{ list-style:none; padding-left:0px;}
+#ciudadesInternacionales.oculto div.button-popup{  margin-top:20px; padding-bottom:10px; float:right; padding-bottom:10px; margin-right:10px;}
+#HotelSearchForm div#agesForm.oculto div#room1.room_age fieldset input {float:right; width:17px; height:17px;}
+#HotelSearchForm div#agesForm.oculto div#room1.room_age fieldset {width:88%; height:28px;}
+#HotelSearchForm div#agesForm.oculto div#room2.room_age fieldset input {float:right; width:17px; height:17px;}
+#HotelSearchForm div#agesForm.oculto div#room2.room_age fieldset {width:88%; height:28px;}
+#HotelSearchForm div#agesForm.oculto div#room3.room_age fieldset input {float:right; width:17px; height:17px;}
+#HotelSearchForm div#agesForm.oculto div#room3.room_age fieldset {width:88%; height:28px;}
+#HotelSearchForm div#agesForm.oculto div#room4.room_age fieldset input {float:right; width:17px; height:17px;}
+#HotelSearchForm div#agesForm.oculto div#room4.room_age fieldset {width:88%; height:28px;}
+#HotelSearchForm div#agesForm.oculto div#room5.room_age fieldset input {float:right; width:17px; height:17px;}
+#HotelSearchForm div#agesForm.oculto div#room5.room_age fieldset {width:88%; height:28px;}
+#body #search-box div.ages-resume { float: right;font-size: 11px;margin: 24px 33px 0 0;width: auto; display:none;}
+
+/*Tooltip: Mensaje de error | PRZ */
+#body #search-box .first-tw {top:111px;}
+#body #search-box .second-tw {margin-left: 313px;top: 182px;}
+#body #search-box .third-tw {right:329px; top:238px;}
+#body #search-box #flightForm .first-tw {top:87px;}
+#body #search-box #flightForm .second-tw {top:129px;}
+#body #search-box #flightForm .third-tw {top:171px;}
+#body #primary-main #search-box #error.tooltip-warning.first-tw {top:77px; left:50px;}
+#body #primary-main #search-box #error.tooltip-warning.second-tw {  margin-left: 313px;top: 182px;}
+#body #primary-main #search-box #error.tooltip-warning.third-tw {  margin-left: 275px;
+    top: 208px;}
+#body #search-box .tooltip-warning, #body #primary-main #search-box #error.tooltip-warning {position:absolute; background-color:#ff0000; border:5px solid #CCC; width:auto; z-index:300; border-radius:7px 7px 7px 7px;}
+#body #search-box .tooltip-warning .top-left-arrow, #body #primary-main #search-box #error.tooltip-warning .top-left-arrow {background: url("/pictures/sb-top-arrow.gif") no-repeat; width:26px; height:19px; margin-top:-18px; margin-left:10px;}	
+#body #search-box .tooltip-warning .sb-ico, #body #primary-main #search-box #error.tooltip-warning .sb-ico {background: url("/pictures/warning-ico.png") no-repeat; width:19px; height:19px; margin:10px; float:left;}
+#body #search-box .tooltip-warning p.sb-origin, #body #primary-main #search-box #error.tooltip-warning p.sb-origin {width:auto; padding:11px 10px 10px 10px; font-size:11px; float:right; line-height:17px; margin:0px; color:#ffffff;}
+#body #search-box .tooltip-warning .top-right-arrow, #body #primary-main #search-box #error.tooltip-warning .top-right-arrow {background: url("/pictures/sb-top-arrow.gif") no-repeat; width:26px; height:19px; margin-top:-18px; float:right;}
+html body div#wrap-homes div#body.hotel div#container div#main div#search-box.hotel div#search-box div#search-box-hotel.search-box form#HotelSearchForm div#error-hotel.tooltip-warning div.midle-left-arrow {  background: url("/pictures/sb-left-arrow.gif") no-repeat scroll 0 0 transparent;float: left; height: 34px; margin-left: -18px; margin-top: 7px; width: 26px; }
+html body div#wrap-homes div#body.hotel div#container div#main div#search-box.hotel div#search-box div#search-box-hotel.search-box form#HotelSearchForm div#error-hotel.tooltip-warning div.midle-right--arrow {  background: url("/pictures/sb-right-arrow.gif") no-repeat scroll 0 0 transparent; float: right; height: 34px; margin-right: -25px; margin-top: 7px; width: 26px;}
+#body.seo #searchbox-flight #search-box .first-tw {top:115px;}
+#body.seo #searchbox-flight #search-box .second-tw {top:147px;}
+#body.seo #searchbox-flight #search-box .third-tw {top:182px;}
+#body.seo #main-content #main-content-left div#searchbox-flight #search-box.es #search-box-flight form#flightForm #error.tooltip-warning {position:absolute; left:10px; background-color:#FFF; border:5px solid #CCC; width:280px; z-index:300; margin:0; padding:0;}
+#body.seo #main-content #main-content-left div#searchbox-flight #search-box.es #search-box-flight form#flightForm #error.tooltip-warning p.sb-origin{width:231px; padding:11px 10px 10px 0; font-size:11px; float:right; line-height:17px; margin:0px; color:#333;}
+#body #search-box div#agesForm.oculto div.button input#setAges.btn{margin-top:14px; font-size:12px; padding:4px;}
+#body #search-box fieldset{ margin:0px !important; padding:0px !important;}
+
+form#HotelSearchForm fieldset.locations div.form-column input#arrHotel.highlight {width:435px; height:23px\0/; padding-top:5px\0/; visibility:visible; margin-top:4px;}
+#search-box .dates input{margin-right: -28px; width: 158px;}
+#paxHab{ width:173px;}
+#boardType {width:200px;}
+#body #search-box .dates input {height: 23px; margin-top: 0px; padding-bottom: 0;padding-left: 4px;width: 91px !important; height:23px\0/; padding-top:5px\0/;}
+
+html body div#wrap-homes div#body.hotel div#container div#main div#search-box.hotel div#search-box div#search-box-hotel.search-box form#HotelSearchForm div#ciudadesInternacionales.oculto fieldset label {margin-left:10px; margin-top:5px;}
+html body div#wrap-homes div#body.hotel div#container div#main div#search-box.hotel div#search-box div#search-box-hotel.search-box form#HotelSearchForm div#ciudadesInternacionales.oculto fieldset select#paisIN.negro-normal {margin-left:10px; margin-top:10px; margin-right:10px;}
+html body div#wrap-homes div#body.hotel div#container div#main div#search-box.hotel div#search-box div#search-box-hotel.search-box form#HotelSearchForm div#ciudadesInternacionales.oculto fieldset select#localidadIn.negro-normal {margin-left:10px; margin-right:10px;}
+
+#room1.room_age fieldset div#select-child1,#room1.room_age fieldset div#select-child2,#room1.room_age fieldset div#select-child3,#room2.room_age fieldset div#select-child4,#room2.room_age fieldset div#select-child5,#room2.room_age fieldset div#select-child6,#room3.room_age fieldset div#select-child7,#room3.room_age fieldset div#select-child8,#room3.room_age fieldset div#select-child9,#room4.room_age fieldset div#select-child10,#room4.room_age fieldset div#select-child11,#room4.room_age fieldset div#select-child12,#room5.room_age fieldset div#select-child13,#room5.room_age fieldset div#select-child14,#room5.room_age fieldset div#select-child15  {margin-left:10px; margin-bottom:12px;}
+
+
+#HotelSearchForm div#agesForm.oculto div#room1.room_age fieldset, #HotelSearchForm div#agesForm.oculto div#room2.room_age fieldset, #HotelSearchForm div#agesForm.oculto div#room3.room_age fieldset, #HotelSearchForm div#agesForm.oculto div#room4.room_age fieldset, #HotelSearchForm div#agesForm.oculto div#room5.room_age fieldset, #HotelSearchForm div#agesForm.oculto div#room6.room_age fieldset, #HotelSearchForm div#agesForm.oculto div#room7.room_age fieldset, #HotelSearchForm div#agesForm.oculto div#room8.room_age fieldset, #HotelSearchForm div#agesForm.oculto div#room9.room_age fieldset, #HotelSearchForm div#agesForm.oculto div#room10.room_age fieldset, #HotelSearchForm div#agesForm.oculto div#room11.room_age fieldset, #HotelSearchForm div#agesForm.oculto div#room12.room_age fieldset, #HotelSearchForm div#agesForm.oculto div#room13.room_age fieldset, #HotelSearchForm div#agesForm.oculto div#room14.room_age fieldset, #HotelSearchForm div#agesForm.oculto div#room15.room_age fieldset {height:auto !important;}
+#body div.w40 {width: 25%;}
+span.close {background: url("/pictures/sprite-search-icons.png") no-repeat scroll 1px -16px transparent;cursor: pointer;display: inline-block;height: 15px;width: 24px;}
+
+#body #search-box-hotel .locations input {height: 23px !important; padding: 0 0 0 4px; width: 435px; overflow:hidden; white-space:nowrap; cursor:text;}
+
+.midle-right-arrow {background: url("/pictures/sb-right-arrow.gif") no-repeat scroll 0 0 transparent;float: left; height: 24px; left: 266px; left: 271px \0/;   position: relative; top: 6px; width: 20px;}
+
+html body div#wrap-homes div#body.hotel div#container div#main div#search-box.hotel div#search-box div#search-box-hotel.search-box form#HotelSearchForm fieldset.locations label.title {margin: 0 0 0px !important;}
+
+html body div#wrap-homes div#body.hotel div#container div#main div#search-box.hotel div#search-box div#search-box-hotel.search-box form#HotelSearchForm fieldset.locations div.form-column w40 area { float:right;}
+
+.form-column w40 area { float:left; margin-top:6px;}
+
+#body #search-box #agesError { background-color: #FF0000;border: 5px solid #CCCCCC;border-radius: 7px 7px 7px 7px;position: absolute;width: auto;z-index: 300;color: #FFFFFF;font-size:11px;padding: 11px 10px 10px; top:-68px;}
+#body #search-box div.error {  background-color: #FF0000;border: 5px solid #CCCCCC;border-radius: 7px 7px 7px 7px;color: #FFFFFF;font-size: 11px;left: 210px;padding: 11px 10px 10px;position: absolute;top: -6px;width: auto;z-index: 300;}
+.top-left-arrow {background: url("/pictures/sb-top-arrow.gif") no-repeat scroll 0 0 transparent;height: 29px;margin-left: 10px; margin-top: -29px;width: 26px; position:absolute;}
+.down-right-arrow { background: url("/pictures/sb-down-arrow.gif") no-repeat scroll 0 0 transparent;height: 29px;left: 142px;margin-left: 10px;margin-top: -29px;position: absolute;top: 78px;width: 26px;}
+#body #search-box input.selected, #body #search-box div.selected {border-color: #FF0000;}
+#body #search-box.lite.air .popup-ayuda-destinos .ayuda-destino .principal-ayuda-destino a, a:link, a:visited {color: #0063be;}

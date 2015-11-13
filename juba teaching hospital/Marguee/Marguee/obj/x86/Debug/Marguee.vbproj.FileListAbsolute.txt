@@ -1,0 +1,9 @@
+C:\Users\USER\Desktop\juba teaching hospital\Marguee\Marguee\bin\Debug\Marguee.exe
+C:\Users\USER\Desktop\juba teaching hospital\Marguee\Marguee\bin\Debug\Marguee.pdb
+C:\Users\USER\Desktop\juba teaching hospital\Marguee\Marguee\bin\Debug\Marguee.xml
+C:\Users\USER\Desktop\juba teaching hospital\Marguee\Marguee\obj\x86\Debug\Marguee.Form1.resources
+C:\Users\USER\Desktop\juba teaching hospital\Marguee\Marguee\obj\x86\Debug\Marguee.Resources.resources
+C:\Users\USER\Desktop\juba teaching hospital\Marguee\Marguee\obj\x86\Debug\Marguee.vbproj.GenerateResource.Cache
+C:\Users\USER\Desktop\juba teaching hospital\Marguee\Marguee\obj\x86\Debug\Marguee.exe
+C:\Users\USER\Desktop\juba teaching hospital\Marguee\Marguee\obj\x86\Debug\Marguee.xml
+C:\Users\USER\Desktop\juba teaching hospital\Marguee\Marguee\obj\x86\Debug\Marguee.pdb

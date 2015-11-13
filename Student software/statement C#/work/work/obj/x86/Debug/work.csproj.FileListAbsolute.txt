@@ -1,0 +1,4 @@
+C:\Users\USER\Desktop\Student software\statement C#\work\work\bin\Debug\work.exe
+C:\Users\USER\Desktop\Student software\statement C#\work\work\bin\Debug\work.pdb
+C:\Users\USER\Desktop\Student software\statement C#\work\work\obj\x86\Debug\work.exe
+C:\Users\USER\Desktop\Student software\statement C#\work\work\obj\x86\Debug\work.pdb

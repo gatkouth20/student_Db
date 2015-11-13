@@ -1,0 +1,8 @@
+C:\Users\USER\Desktop\Banking system\Student information\Student information\bin\Debug\studentDB.accdb
+C:\Users\USER\Desktop\Banking system\Student information\Student information\bin\Debug\Student information.exe.config
+C:\Users\USER\Desktop\Banking system\Student information\Student information\bin\Debug\Student information.exe
+C:\Users\USER\Desktop\Banking system\Student information\Student information\obj\x86\Debug\Student_information.Form1.resources
+C:\Users\USER\Desktop\Banking system\Student information\Student information\obj\x86\Debug\Student_information.Resources.resources
+C:\Users\USER\Desktop\Banking system\Student information\Student information\obj\x86\Debug\Student information.vbproj.GenerateResource.Cache
+C:\Users\USER\Desktop\Banking system\Student information\Student information\obj\x86\Debug\Student information.xml
+C:\Users\USER\Desktop\Banking system\Student information\Student information\obj\x86\Debug\Student information.pdb

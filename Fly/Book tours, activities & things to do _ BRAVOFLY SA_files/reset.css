@@ -1,0 +1,63 @@
+/* -------------------------------------------------------------- 
+	from BluePrint
+	http://code.google.com/p/blueprintcss/
+	merged with
+	http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
+-------------------------------------------------------------- */
+
+.header12 html, .header12 body, .header12 div, .header12 span, .header12 object, .header12 iframe,
+.header12 h1, .header12 h2, .header12 h3, .header12 h4, .header12 h5, .header12 h6, .header12 p, .header12 blockquote, .header12 pre,
+.header12 a, .header12 abbr, .header12 acronym, .header12 address, .header12 code,
+.header12 del, .header12 dfn, .header12 em, .header12 img, .header12 q, .header12 dl, .header12 dt, .header12 dd, .header12 ol, .header12 ul, .header12 li,
+.header12 fieldset, .header12 form, .header12 label, .header12 legend,
+.header12 table, .header12 caption, .header12 tbody, .header12 tfoot, .header12 thead, .header12 tr, .header12 th, t.header12 d {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-family: inherit;
+}
+
+body {
+	color: black;
+	background: white;
+    margin: 0;
+}
+
+a:focus, a:active {
+outline: 0;
+}
+
+.header12 :focus {
+	outline: 0;
+}
+.header12 ol, .header12 ul, .header12 li {
+	list-style: none;
+}
+
+/* Tables still need 'cellspacing="0"' in the markup. */
+.header12 table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+.header12 caption, .header12 th, .header12 td {
+	text-align: left;
+	font-weight: normal;
+}
+.header12 table, .header12 td, .header12 th {
+	vertical-align: middle;
+}
+
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+.header12 blockquote:before, .header12 blockquote:after, .header12 q:before, .header12 q:after { 
+	content: ""; 
+}
+.header12 blockquote, q {
+	quotes: "" "";
+}
+
+/* Remove annoying border on linked images. */
+.header12 a img {
+	border: none;
+}
